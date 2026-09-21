@@ -1,0 +1,38 @@
+/* UE */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: #FFFFFF;
+
+
+/* start_background */
+
+position: absolute;
+width: 1440px;
+height: 1024px;
+left: 0px;
+top: 0px;
+
+background: url(ChatGPT Image 15 set 2026, 19_54_18.png);
+
+
+/* O anche “hello”, “bonjour”, “hola”, “hallo”, “olá”, “こんにちは”, “ciao”. Ora che ci siamo capiti, benvenuti nel mio portfolio. Clicca per entrare. */
+
+position: absolute;
+left: 30%;
+right: 30.07%;
+top: 88.18%;
+bottom: 5.37%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);

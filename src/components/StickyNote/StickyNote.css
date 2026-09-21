@@ -1,0 +1,64 @@
+/* Sticky Note Specific Styles */
+.sticky-note-window {
+  /* Override default window styles */
+  background-color: transparent;
+  border: none;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+  border-radius: 4px; /* Less rounded than normal window */
+  overflow: hidden;
+}
+
+.sticky-note-window .window__content {
+  background-color: #fef08a; /* Yellow */
+}
+
+/* Toolbar */
+.sticky-note-toolbar {
+  display: flex;
+  height: 20px;
+  background-color: #fde047; /* Slightly darker yellow for header */
+  align-items: center;
+  padding: 0 8px;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+.sticky-note-btn {
+  background: transparent;
+  border: none;
+  color: #a16207;
+  padding: 2px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sticky-note-btn:hover {
+  color: #713f12;
+}
+
+.sticky-note-spacer {
+  flex: 1;
+}
+
+/* Content */
+.sticky-note-content {
+  padding: 16px 20px;
+  height: 100%;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.sticky-note-text {
+  margin: 0 0 16px 0;
+  font-size: 15px;
+  color: #111;
+  line-height: 1.4;
+  letter-spacing: -0.2px;
+}
+
+.sticky-note-text strong {
+  font-weight: 800;
+  text-transform: uppercase;
+}

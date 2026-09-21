@@ -1,0 +1,107 @@
+/* ──────────────────────────────────────────────────────────────
+   Global Styles — Apple Design System Foundation
+   ────────────────────────────────────────────────────────────── */
+
+/* ── Font Face ─────────────────────────────────────────────── */
+@font-face {
+  font-family: 'SF Pro';
+  src: url('/fonts/SF-Pro.ttf') format('truetype');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+/* ── Design Tokens ─────────────────────────────────────────── */
+:root {
+  /* Colors — Semantic */
+  --color-accent: #0071e3;
+  --color-destructive: #ff3b30;
+  --color-success: #34c759;
+  --color-warning: #ff9500;
+
+  /* Colors — Backgrounds */
+  --color-bg-dark: #1d1d1f;
+  --color-bg-light: #f5f5f7;
+  --color-text-dark: #1d1d1f;
+  --color-text-light: #f5f5f7;
+
+  /* Colors — Materials */
+  --color-window-bg: rgba(245, 245, 247, 0.82);
+  --color-window-bg-dark: rgba(40, 40, 42, 0.72);
+  --color-dock-bg: rgba(255, 255, 255, 0.25);
+  --color-dock-bg-dark: rgba(30, 30, 32, 0.4);
+  --color-menubar-bg: rgba(30, 30, 30, 0.65);
+
+  /* Radii */
+  --radius-icon: 4px;
+  --radius-window: 10px;
+  --radius-dock: 18px;
+
+  /* Shadows */
+  --shadow-window: 0 0 0 0.5px rgba(0, 0, 0, 0.05),
+                   0 22px 70px rgba(0, 0, 0, 0.2);
+  --shadow-dock: 0 0 0 0.5px rgba(255, 255, 255, 0.05),
+                 0 22px 70px rgba(0, 0, 0, 0.24);
+
+  /* Materials */
+  --material-blur: blur(20px) saturate(180%);
+
+  /* Transitions */
+  --ease-apple: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --transition-fast: 0.2s var(--ease-apple);
+  --transition-medium: 0.35s var(--ease-apple);
+
+  /* Traffic Lights */
+  --traffic-close: #ff5f57;
+  --traffic-minimize: #febc2e;
+  --traffic-maximize: #28c840;
+}
+
+/* ── Reset ─────────────────────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, "Segoe UI", "Inter", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: #000;
+}
+
+/* ── Utility: Hide scrollbar ───────────────────────────────── */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* ── Page transition wrapper ───────────────────────────────── */
+.page-transition {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.4s var(--ease-apple);
+}
+
+.page-transition--entering {
+  opacity: 0;
+}
+
+.page-transition--visible {
+  opacity: 1;
+}
+
+.page-transition--exiting {
+  opacity: 0;
+}

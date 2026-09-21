@@ -1,0 +1,123 @@
+/* ──────────────────────────────────────────────────────────────
+   FirstPage — Smooth left-to-right writing reveal via CSS mask
+   ────────────────────────────────────────────────────────────── */
+
+.first-page {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  outline: none;
+  overflow: hidden;
+
+  background: url('/firstpage-wallpaper.png') center center / cover no-repeat;
+  background-color: #1a6fcc;
+}
+
+/* ── Greeting image ────────────────────────────────────────── */
+.first-page__greeting {
+  max-width: min(50vw, 420px);
+  max-height: min(22vh, 220px);
+  height: auto;
+  width: auto;
+  object-fit: contain;
+
+  pointer-events: none;
+
+  /* ── Left-to-right reveal mask ───────────────────────────
+     A gradient mask sweeps from left to right.
+     - mask-size is 300% wide so the opaque region can start
+       off-screen to the right and sweep across.
+     - The gradient has a soft leading edge for a natural feel.
+     ──────────────────────────────────────────────────────── */
+  -webkit-mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 30%,
+    transparent 50%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to right,
+    black 0%,
+    black 30%,
+    transparent 50%,
+    transparent 100%
+  );
+  -webkit-mask-size: 350% 100%;
+  mask-size: 350% 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+/* ── Revealing: mask sweeps left to right ───────────────────── */
+.first-page__greeting--revealing {
+  -webkit-mask-position: 100% 0;
+  mask-position: 100% 0;
+  animation: wipe-reveal 1.68s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+  opacity: 1;
+}
+
+/* ── Visible: fully revealed ───────────────────────────────── */
+.first-page__greeting--visible {
+  -webkit-mask-position: 0% 0;
+  mask-position: 0% 0;
+  opacity: 1;
+}
+
+/* ── Fading out ────────────────────────────────────────────── */
+.first-page__greeting--fading-out {
+  -webkit-mask-position: 0% 0;
+  mask-position: 0% 0;
+  opacity: 0;
+  transition: opacity 360ms var(--ease-apple);
+}
+
+/* ── Wipe animation keyframes ──────────────────────────────── */
+@keyframes wipe-reveal {
+  from {
+    -webkit-mask-position: 100% 0;
+    mask-position: 100% 0;
+  }
+  to {
+    -webkit-mask-position: 0% 0;
+    mask-position: 0% 0;
+  }
+}
+
+/* ── Subtitle section at bottom ────────────────────────────── */
+.first-page__subtitle {
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.8s var(--ease-apple);
+  width: max-content;
+  max-width: 90%;
+}
+
+.first-page__subtitle--visible {
+  opacity: 1;
+}
+
+.first-page__subtitle-line {
+  font-family: 'SF Pro', -apple-system, BlinkMacSystemFont, 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 22px;
+  color: #fff;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+  margin: 0;
+}
+
+.first-page__subtitle-line--cta {
+  font-weight: 700;
+}

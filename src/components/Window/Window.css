@@ -1,0 +1,214 @@
+/* ──────────────────────────────────────────────────────────────
+   Window — macOS Preview-style window (light theme)
+   ────────────────────────────────────────────────────────────── */
+
+.window {
+  position: absolute;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(0, 0, 0, 0.08),
+    0 30px 60px rgba(0, 0, 0, 0.25),
+    0 10px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+  min-width: 300px;
+  min-height: 200px;
+  will-change: transform;
+  background: #fff;
+}
+
+.window:focus {
+  outline: none;
+}
+
+.window--maximized {
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.window--minimized {
+  transform: scale(0.12);
+  opacity: 0;
+  pointer-events: none;
+  transition: transform 0.4s var(--ease-apple), opacity 0.3s var(--ease-apple);
+}
+
+/* ── Title bar (light macOS Preview style) ─────────────────── */
+.window__titlebar {
+  height: 28px;
+  min-height: 28px;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+  background: linear-gradient(180deg, #ebebeb 0%, #d6d6d6 100%);
+  border-bottom: 1px solid #c0c0c0;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+  position: relative;
+}
+
+.window__titlebar:active {
+  cursor: grabbing;
+}
+
+/* ── Traffic lights ────────────────────────────────────────── */
+.window__traffic-lights {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  z-index: 1;
+  flex-shrink: 0;
+}
+
+.window__tl {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 0.5px solid rgba(0, 0, 0, 0.12);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: filter 0.1s ease;
+}
+
+.window__tl svg {
+  opacity: 0;
+  transition: opacity 0.1s ease;
+}
+
+.window__traffic-lights:hover .window__tl svg {
+  opacity: 1;
+}
+
+.window__tl--close    { background: var(--traffic-close); }
+.window__tl--minimize { background: var(--traffic-minimize); }
+.window__tl--maximize { background: var(--traffic-maximize); }
+
+.window__tl:hover { filter: brightness(0.92); }
+
+.window__tl:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ── Breadcrumb title ──────────────────────────────────────── */
+.window__breadcrumb {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  pointer-events: none;
+}
+
+.window__breadcrumb-icon {
+  font-size: 12px;
+  opacity: 0.6;
+}
+
+.window__breadcrumb-chevron {
+  font-size: 12px;
+  color: #999;
+}
+
+.window__breadcrumb-text {
+  font-size: 13px;
+  font-weight: 500;
+  color: #1d1d1f;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 300px;
+}
+
+/* ── Toolbar ───────────────────────────────────────────────── */
+.window__toolbar {
+  display: flex;
+  align-items: center;
+  padding: 4px 12px;
+  background: linear-gradient(180deg, #e8e8e8 0%, #dcdcdc 100%);
+  border-bottom: 1px solid #c0c0c0;
+  gap: 4px;
+  cursor: grab;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.window__toolbar:active {
+  cursor: grabbing;
+}
+
+.window__toolbar-group {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.window__toolbar-spacer {
+  flex: 1;
+}
+
+.window__toolbar-btn {
+  width: 28px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  background: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  color: #555;
+  transition: background 0.15s ease;
+}
+
+.window__toolbar-btn:hover {
+  background: rgba(0, 0, 0, 0.08);
+}
+
+.window__toolbar-btn:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: -2px;
+}
+
+/* Search field */
+.window__toolbar-search {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  padding: 3px 8px;
+  background: rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  min-width: 80px;
+}
+
+.window__toolbar-search-icon {
+  font-size: 11px;
+  opacity: 0.5;
+}
+
+.window__toolbar-search-text {
+  font-size: 12px;
+  color: #999;
+}
+
+/* ── Content area ──────────────────────────────────────────── */
+.window__content {
+  flex: 1;
+  background: #f0f0f0;
+  overflow: auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+

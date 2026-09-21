@@ -1,0 +1,400 @@
+/* FinderWindow.css */
+
+.finder-window-wrapper {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px rgba(0,0,0,0.25), 0 0 0 1px rgba(0,0,0,0.1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+/* OVERRIDES FOR DEFAULT WINDOW STYLES */
+.finder-window-wrapper.window {
+  background: transparent;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.finder-window-wrapper .window__custom-titlebar-wrapper {
+  background: transparent;
+  width: 100%;
+}
+
+.finder-window-wrapper .window__content {
+  display: block;
+  background: transparent;
+  padding: 0;
+  height: 100%;
+}
+
+/* TOPBAR */
+.finder-topbar {
+  display: flex;
+  height: 84px; /* Toolbar + Pathbar */
+  background: transparent;
+  user-select: none;
+}
+
+.finder-topbar__sidebar {
+  width: 220px;
+  background: rgba(230, 230, 230, 0.6);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  position: relative;
+  z-index: 10;
+}
+
+.finder-traffic-lights {
+  position: absolute;
+  top: 18px;
+  left: 16px;
+}
+
+.finder-topbar__main {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+  box-shadow: -1px 0 0 rgba(0,0,0,0.05); /* Divider between sidebar and main */
+}
+
+/* MAIN TOOLBAR */
+.finder-toolbar {
+  height: 52px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.finder-toolbar__nav, .finder-toolbar__actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.finder-toolbar__title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  margin: 0 16px;
+  overflow: hidden;
+}
+
+.finder-toolbar-label {
+  font-size: 10px;
+  color: #777;
+  margin-top: 4px;
+}
+
+.finder-nav-buttons {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 100px;
+  overflow: hidden;
+  height: 26px;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.02);
+}
+
+.finder-nav-btn {
+  background: none;
+  border: none;
+  color: #555;
+  padding: 0 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  cursor: pointer;
+  outline: none;
+}
+
+.finder-nav-btn:disabled {
+  opacity: 0.3;
+  cursor: default;
+}
+
+.finder-nav-btn:not(:disabled):hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.finder-nav-divider {
+  width: 1px;
+  height: 14px;
+  background: rgba(0, 0, 0, 0.15);
+}
+
+.finder-title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+  margin-top: 4px;
+  line-height: 1.1;
+  text-align: center;
+  width: 100%;
+}
+
+.finder-title-container span {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-word;
+}
+
+.finder-toolbar__actions {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.finder-action-group {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 48px;
+}
+
+.finder-action-group.search-group {
+  width: 32px;
+}
+
+.finder-action-btn {
+  background: none;
+  border: none;
+  color: #555;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  border-radius: 6px;
+  padding: 0 8px;
+  cursor: default;
+}
+
+.finder-action-btn.with-dropdown {
+  padding-right: 4px;
+}
+
+.finder-action-btn.circle-btn {
+  padding: 0;
+}
+
+.finder-action-btn:hover {
+  background: #f0f0f0;
+}
+
+/* PATHBAR */
+.finder-pathbar-container {
+  padding: 0 16px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+}
+
+.finder-pathbar {
+  background: #f5f5f5;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  width: 100%;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-size: 12px;
+  color: #555;
+}
+
+.finder-pathbar-plus {
+  position: absolute;
+  right: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  color: #777;
+  font-size: 16px;
+  line-height: 1;
+}
+
+/* LAYOUT */
+.finder-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+/* SIDEBAR */
+.finder-sidebar {
+  width: 220px;
+  background: rgba(230, 230, 230, 0.6);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  padding: 10px 12px;
+  overflow-y: auto;
+  position: relative;
+}
+
+.finder-sidebar__section {
+  font-size: 11px;
+  font-weight: 600;
+  color: #888;
+  padding: 16px 8px 4px 8px;
+}
+
+.finder-sidebar__group {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.finder-sidebar__item {
+  display: flex;
+  align-items: center;
+  padding: 4px 8px;
+  font-size: 13px;
+  color: #333;
+  border-radius: 6px;
+  gap: 8px;
+  cursor: default;
+  font-weight: 500;
+}
+
+.finder-sidebar__item svg {
+  color: #333;
+}
+
+.finder-sidebar__item:hover {
+  background: rgba(0,0,0,0.05);
+}
+
+.finder-sidebar__item .icon-app svg,
+.finder-sidebar__item .icon-down svg,
+.finder-sidebar__item .icon-desktop svg,
+.finder-sidebar__item .icon-doc svg {
+  color: #333;
+}
+
+.cloud-badge {
+  margin-left: auto;
+  color: #999;
+}
+.cloud-badge svg {
+  color: #999 !important;
+  width: 14px;
+  height: 14px;
+}
+
+
+
+/* MAIN CONTENT */
+.finder-main-area {
+  flex: 1;
+  background: #ffffff;
+  display: flex;
+  flex-direction: column;
+  box-shadow: -1px 0 0 rgba(0,0,0,0.05);
+}
+
+.finder-content-grid {
+  flex: 1;
+  display: flex;
+  padding: 24px;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.finder-folder-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+  cursor: default;
+}
+
+.finder-folder-icon-wrapper {
+  background: transparent;
+  padding: 4px;
+  border-radius: 8px;
+}
+
+.finder-folder-item.selected .finder-folder-icon-wrapper {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.finder-folder-label {
+  font-size: 12px;
+  color: #000;
+  margin-top: 4px;
+  padding: 2px 6px;
+  border-radius: 4px;
+}
+
+.finder-folder-item.selected .finder-folder-label {
+  background: #0066cc;
+  color: #fff;
+}
+
+/* STATUS BAR */
+.finder-statusbar {
+  height: 28px;
+  border-top: 1px solid #e0e0e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 16px;
+  position: relative;
+}
+
+.finder-statusbar-text {
+  font-size: 11px;
+  color: #777;
+}
+
+.finder-statusbar-slider {
+  position: absolute;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.slider-icon {
+  color: #999;
+}
+
+.slider-track {
+  width: 60px;
+  height: 4px;
+  background: #e0e0e0;
+  border-radius: 2px;
+  position: relative;
+}
+
+.slider-thumb {
+  width: 14px;
+  height: 14px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 1px 2px rgba(0,0,0,0.1);
+}

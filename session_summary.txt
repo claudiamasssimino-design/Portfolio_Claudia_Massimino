@@ -1,0 +1,15 @@
+Session Summary (2026-09-17)
+- Fixed Vite build error caused by an unterminated comment in `src/components/DesktopIcon/DesktopIcon.jsx`.
+- Implemented the complete structure for `DesktopIcon` component, matching the missing file body and properly using its props (label, x, y, type).
+- Verified the build succeeds using `npm run build`.
+- Updated `DesktopIcon.jsx` and `DesktopIcon.css` to dynamically render the current day and date (e.g. "Gio 17") in macOS calendar icon style when `type='calendar'`.
+- Refactored the dock to use pure CSS native `:has()` selector for animations instead of JavaScript state updates, completely fixing jitter and overlap issues while greatly improving performance.
+- Made desktop icons draggable by implementing mouse drag event handlers in `DesktopIcon.jsx`.
+- Fixed the dock container height so that hovering icons overflow upwards outside the container, matching the native macOS dock behavior.
+- Removed the secondary toolbar containing the zoom, markup, and search tools from `Window.jsx` as requested.
+- Implemented a fully functional `NotesApp` component that 100% faithfully recreates the macOS Apple Notes UI and allows adding, editing, and deleting notes.
+- Updated `DesktopPage` and `DesktopIcon` so the Notes app can be opened by double-clicking the Note icon on the desktop.
+- Created `CalendarApp` and `StickyNote` components that open independently on double-clicking the Calendar icon, matching the requested reference image.
+- Updated Chrome icon in the Dock to open a LinkedIn profile in a new tab when clicked.
+- Fixed a global CSS issue where `.window__content img` was overriding specific image sizes, which caused both the Calendar stickers and the "Prima di Photoshop" image to break.
+- Restored Calendar sticker sizes to the original design (140px) and fixed the "Prima di Photoshop" preview window to perfectly match its intrinsic aspect ratio (420x588) so it fits edge-to-edge without zooming or cropping.

@@ -1,0 +1,136 @@
+.iv-window-wrapper.window {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: width 0.3s ease, height 0.3s ease;
+}
+
+.iv-titlebar {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ebebeb 0%, #d6d6d6 100%);
+  border-bottom: 1px solid #c0c0c0;
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+
+.iv-traffic-lights {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.iv-titlebar-title {
+  color: #1d1d1f;
+  font-size: 13px;
+  font-weight: 500;
+  text-shadow: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.iv-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+/* SIDEBAR */
+.iv-sidebar {
+  width: 240px;
+  background: rgba(230, 230, 230, 0.6);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.iv-sidebar.visible {
+  transform: translateX(0);
+}
+
+.iv-sidebar-title {
+  color: #666;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.iv-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 12px;
+}
+
+.iv-sidebar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.iv-sidebar-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.iv-sidebar-item.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.iv-sidebar-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+  pointer-events: none;
+  object-fit: cover;
+}
+
+.iv-sidebar-label {
+  color: #333;
+  font-size: 11px;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* IMAGE AREA */
+.iv-player-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.iv-image-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

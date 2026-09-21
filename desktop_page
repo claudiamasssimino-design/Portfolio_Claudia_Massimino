@@ -1,0 +1,1213 @@
+/* DESKTOP */
+
+position: relative;
+width: 1440px;
+height: 1024px;
+
+background: url(Checker.png);
+
+
+/* NOTE */
+
+position: absolute;
+width: 105px;
+height: 93px;
+left: 1164px;
+top: 598px;
+
+
+
+/* Note */
+
+position: absolute;
+left: 83.33%;
+right: 14.38%;
+top: 65.82%;
+bottom: 32.52%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+
+
+/* NOTE */
+
+position: absolute;
+width: 105px;
+height: 80px;
+left: 1164px;
+top: 598px;
+
+background: url(note.png);
+
+
+/* CALENDARIO */
+
+position: absolute;
+width: 115px;
+height: 96px;
+left: 242px;
+top: 382px;
+
+
+
+/* Calendario */
+
+position: absolute;
+left: 18.06%;
+right: 76.74%;
+top: 45.02%;
+bottom: 53.32%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+
+color: #FFFFFF;
+
+text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.25);
+
+
+/* CALENDARIO */
+
+position: absolute;
+width: 115px;
+height: 87px;
+left: 242px;
+top: 382px;
+
+background: url(calendario.png);
+
+
+/* IO 1 */
+
+position: absolute;
+width: 713px;
+height: 527px;
+left: 404px;
+top: 233px;
+
+background: url(IO.png);
+
+
+/* BAR */
+
+position: absolute;
+width: 806px;
+height: 124.45px;
+left: 283px;
+top: 859px;
+
+
+
+/* Rectangle 6 */
+
+position: absolute;
+width: 759px;
+height: 73px;
+left: calc(50% - 759px/2 - 15.5px);
+top: 910px;
+
+background: rgba(229, 229, 229, 0.7);
+border-radius: 10px;
+
+
+/* LINEA */
+
+position: absolute;
+width: 38.37px;
+height: 78.45px;
+left: 976.53px;
+top: 904.64px;
+
+background: url(linea.png);
+
+
+/* CESTINO */
+
+position: absolute;
+width: 105px;
+height: 118.09px;
+left: 984px;
+top: 865px;
+
+
+
+/* cestino */
+
+position: absolute;
+height: 78.45px;
+left: 10.19%;
+right: 8.6%;
+top: 39.64px;
+
+background: url(cestino.png);
+
+
+/* CESTINO HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 77.98%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 77.98%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 85.6%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 41.9%;
+right: 41.9%;
+top: 8.47%;
+bottom: 77.14%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* Qui riposa FINAL_07 */
+
+position: absolute;
+left: 4.76%;
+right: 4.76%;
+top: 1.69%;
+bottom: 88.14%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* MAIL */
+
+position: absolute;
+width: 124px;
+height: 123.45px;
+left: 875px;
+top: 860px;
+
+
+
+/* outlook */
+
+position: absolute;
+height: 78.45px;
+left: 15.32%;
+right: 15.91%;
+top: 45px;
+
+background: url(outlook.png);
+
+
+/* OUTLOOK HOVER */
+
+position: absolute;
+left: 0%;
+right: nan%;
+top: 0%;
+bottom: nan%;
+
+
+
+/* Union */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.94%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86.23%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 42.74%;
+right: 43.55%;
+top: 8.1%;
+bottom: 78.13%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* Le apro dopo, promesso */
+
+position: absolute;
+visibility: hidden;
+left: 4.03%;
+right: 3.23%;
+top: 0.81%;
+bottom: 89.47%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* TEAMS */
+
+position: absolute;
+width: 197px;
+height: 124.45px;
+left: 759px;
+top: 859px;
+
+
+
+/* teams */
+
+position: absolute;
+height: 78.45px;
+left: 28.43%;
+right: 28.29%;
+top: 46px;
+
+background: url(teams.png);
+
+
+/* TEAMS HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.05%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.05%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86.34%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 45.79%;
+right: 45.18%;
+top: 8.04%;
+bottom: 78.3%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* «Hai un minuto?» Spoiler: no, ma OVVIO */
+
+position: absolute;
+left: 2.54%;
+right: 2.03%;
+top: 1.61%;
+bottom: 88.75%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* AI */
+
+position: absolute;
+width: 186px;
+height: 122.45px;
+left: 684px;
+top: 861px;
+
+
+
+/* ai */
+
+position: absolute;
+height: 78.45px;
+left: 26.88%;
+right: 27.27%;
+top: 44px;
+
+background: url(ai.png);
+
+
+/* AI HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.58%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.58%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86.12%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 45.16%;
+right: 45.7%;
+top: 7.35%;
+bottom: 78.77%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* 48 livelli chiamati “Livello 1” (scherzo) */
+
+position: absolute;
+left: 2.69%;
+right: 2.15%;
+top: 1.63%;
+bottom: 88.57%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* PSD */
+
+position: absolute;
+width: 120px;
+height: 123.45px;
+left: 637px;
+top: 860px;
+
+
+
+/* psd */
+
+position: absolute;
+height: 78.45px;
+left: 14.17%;
+right: 14.77%;
+top: 45px;
+
+background: url(psd.png);
+
+
+/* PSD HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.75%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.75%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86.23%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 42.5%;
+right: 43.33%;
+top: 7.29%;
+bottom: 78.94%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* 02_final_finalissimo_OK */
+
+position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 1.62%;
+bottom: 88.66%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* SPOTIFY */
+
+position: absolute;
+width: 161px;
+height: 121.45px;
+left: 537px;
+top: 862px;
+
+
+
+/* spotify */
+
+position: absolute;
+height: 78.45px;
+left: 23.6%;
+right: 23.43%;
+top: 43px;
+
+background: url(spotify.png);
+
+
+/* SPOTIFY HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.42%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 79.42%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 44.72%;
+right: 44.72%;
+top: 7.41%;
+bottom: 78.59%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* No, Sal Da Vinci non è in playlist */
+
+position: absolute;
+left: 3.11%;
+right: 3.11%;
+top: 1.65%;
+bottom: 88.47%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* MAIL */
+
+position: absolute;
+width: 139px;
+height: 121.45px;
+left: 467px;
+top: 862px;
+
+
+
+/* mail */
+
+position: absolute;
+height: 78.45px;
+left: 18.71%;
+right: 19.95%;
+top: 43px;
+
+background: url(mAIL.png);
+
+
+/* MAIL HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.59%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.59%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 43.88%;
+right: 43.88%;
+top: 8.23%;
+bottom: 77.77%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* Se ti ho convinto, clicca qui */
+
+position: absolute;
+left: 3.6%;
+right: 3.6%;
+top: 1.65%;
+bottom: 88.47%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* CHROME */
+
+position: absolute;
+width: 152px;
+height: 123.45px;
+left: 379px;
+top: 860px;
+
+
+
+/* spotify */
+
+position: absolute;
+height: 78.45px;
+left: 21.71%;
+right: 22.19%;
+top: 45px;
+
+background: url(chrome.png);
+
+
+/* CHROME HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.92%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.92%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86.23%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 43.93%;
+right: 44.74%;
+top: 8.1%;
+bottom: 78.13%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* Chiudere le tab porta sfortuna */
+
+position: absolute;
+left: 2.63%;
+right: 3.29%;
+top: 1.62%;
+bottom: 88.66%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* FINDER */
+
+position: absolute;
+width: 191px;
+height: 121.45px;
+left: 283px;
+top: 862px;
+
+
+
+/* finder */
+
+position: absolute;
+height: 78.45px;
+left: 27.23%;
+right: 28.13%;
+top: 43px;
+
+background: url(finder.png);
+
+
+/* FINDER HOVER */
+
+position: absolute;
+visibility: hidden;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.59%;
+
+
+
+/* Union */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 78.59%;
+
+background: #D9D9D9;
+
+
+/* Rectangle 4 */
+
+position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 86%;
+
+background: #D9D9D9;
+border-radius: 4px;
+
+
+/* Polygon 1 */
+
+position: absolute;
+left: 45.55%;
+right: 45.55%;
+top: 8.23%;
+bottom: 77.77%;
+
+background: #D9D9D9;
+border-radius: 1px;
+transform: rotate(-180deg);
+
+
+/* So che quel file è qui da qualche parte */
+
+position: absolute;
+left: 2.62%;
+right: 2.62%;
+top: 1.65%;
+bottom: 88.47%;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 10px;
+line-height: 12px;
+
+color: #000000;
+
+
+
+/* Frame 1 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 145px;
+height: 89px;
+left: 128px;
+top: 136px;
+
+
+
+/* _System App Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 72px;
+height: 72px;
+
+background: url(Folder Icon.png);
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* CRISPY REVELATION */
+
+width: 145px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 2 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 98px;
+height: 89px;
+left: 93px;
+top: 367px;
+
+
+
+/* _System App Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 72px;
+height: 72px;
+
+background: url(Folder Icon.png);
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* 7DAYSBRIEF */
+
+width: 98px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 3 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 86px;
+height: 89px;
+left: 142px;
+top: 648px;
+
+
+
+/* _System App Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 72px;
+height: 72px;
+
+background: url(Folder Icon.png);
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* ILIAD */
+
+width: 86px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 4 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 86px;
+height: 89px;
+left: 1212px;
+top: 150px;
+
+
+
+/* _System App Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 72px;
+height: 72px;
+
+background: url(Folder Icon.png);
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* OROSAIWA */
+
+width: 86px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;
+
+
+/* Frame 5 */
+
+/* Auto layout */
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 86px;
+height: 89px;
+left: 1248px;
+top: 423px;
+
+
+
+/* _System App Icon */
+
+/* Auto layout */
+display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+width: 72px;
+height: 72px;
+
+background: url(Folder Icon.png);
+border-radius: 0px;
+
+/* Inside auto layout */
+flex: none;
+order: 0;
+flex-grow: 0;
+
+
+/* PED */
+
+width: 86px;
+height: 17px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 17px;
+/* identical to box height */
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+
+/* Inside auto layout */
+flex: none;
+order: 1;
+align-self: stretch;
+flex-grow: 0;

@@ -1,0 +1,140 @@
+/* ──────────────────────────────────────────────────────────────
+   Dock — macOS dock with real PNG icons
+   ────────────────────────────────────────────────────────────── */
+
+.dock {
+  position: fixed;
+  bottom: 6px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9998;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.dock__container {
+  display: flex;
+  align-items: flex-end;
+  gap: 12px;
+  padding: 0 8px 5px 8px;
+  height: 58px;
+  box-sizing: border-box;
+  background: rgba(229, 229, 229, 0.7);
+  backdrop-filter: var(--material-blur);
+  -webkit-backdrop-filter: var(--material-blur);
+  border-radius: 14px;
+  box-shadow: var(--shadow-dock);
+  border: 0.5px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ── Separator line ────────────────────────────────────────── */
+.dock__separator {
+  width: 1px;
+  height: 42px;
+  background: rgba(0, 0, 0, 0.15);
+  margin: 0 4px;
+  flex-shrink: 0;
+  align-self: center;
+}
+
+/* ── Dock icon button ──────────────────────────────────────── */
+.dock__icon {
+  width: 48px;
+  height: 48px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* Use an ease-out transition for smooth growing and shrinking */
+  transition: width 0.2s cubic-bezier(0.25, 1, 0.5, 1), height 0.2s cubic-bezier(0.25, 1, 0.5, 1), margin 0.2s cubic-bezier(0.25, 1, 0.5, 1);
+  will-change: width, height, margin;
+  position: relative;
+  flex-shrink: 0;
+  background: none;
+  padding: 0;
+  border-radius: 0;
+  margin: 0; /* Base margin */
+}
+
+/* Hovered icon (max scale) */
+.dock__icon:hover {
+  width: 72px;
+  height: 72px;
+  margin: 0 8px; /* Push neighbors away slightly */
+}
+
+/* Direct adjacent siblings (Next) */
+.dock__icon:hover + .dock__icon,
+.dock__icon:hover + .dock__separator + .dock__icon {
+  width: 60px;
+  height: 60px;
+  margin: 0 4px;
+}
+
+/* Direct adjacent siblings (Previous) using :has() */
+.dock__icon:has(+ .dock__icon:hover),
+.dock__icon:has(+ .dock__separator + .dock__icon:hover) {
+  width: 60px;
+  height: 60px;
+  margin: 0 4px;
+}
+
+/* Second adjacent siblings (Next) */
+.dock__icon:hover + .dock__icon + .dock__icon,
+.dock__icon:hover + .dock__separator + .dock__icon + .dock__icon,
+.dock__icon:hover + .dock__icon + .dock__separator + .dock__icon {
+  width: 52px;
+  height: 52px;
+  margin: 0 2px;
+}
+
+/* Second adjacent siblings (Previous) */
+.dock__icon:has(+ .dock__icon + .dock__icon:hover),
+.dock__icon:has(+ .dock__separator + .dock__icon + .dock__icon:hover),
+.dock__icon:has(+ .dock__icon + .dock__separator + .dock__icon:hover) {
+  width: 52px;
+  height: 52px;
+  margin: 0 2px;
+}
+
+.dock__icon:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 2px;
+}
+
+/* ── Icon image ────────────────────────────────────────────── */
+.dock__icon-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  pointer-events: none;
+}
+
+/* ── Tooltip (quip) on hover ───────────────────────────────── */
+.dock__icon::after {
+  content: attr(data-quip);
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%) scale(0.85);
+  background: rgba(30, 30, 30, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  color: #fff;
+  font-size: 11px;
+  font-weight: 500;
+  font-family: 'SF Pro', -apple-system, sans-serif;
+  padding: 5px 12px;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.15s ease, transform 0.15s ease;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.dock__icon:hover::after {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}

@@ -1,0 +1,298 @@
+/* Toolbar */
+.notes-toolbar {
+  display: flex;
+  height: 52px;
+  background-color: #f6f6f6;
+  border-bottom: 1px solid #dcdcdc;
+  align-items: center;
+  box-sizing: border-box;
+  user-select: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.notes-toolbar__section {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  padding: 0 12px;
+  box-sizing: border-box;
+  gap: 16px;
+}
+
+.notes-toolbar__sidebar {
+  width: 220px;
+  min-width: 220px;
+  justify-content: space-between;
+}
+
+.notes-toolbar__list {
+  width: 280px;
+  min-width: 280px;
+  border-left: 1px solid #e1e1e1;
+  justify-content: space-between;
+}
+
+.notes-toolbar__editor {
+  flex: 1;
+  border-left: 1px solid #e1e1e1;
+  gap: 12px;
+}
+
+.notes-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #555;
+  padding: 4px;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notes-btn:hover {
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+.notes-btn.active {
+  background-color: #e5e5e5;
+  color: #333;
+}
+
+.notes-btn-group {
+  display: flex;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.notes-btn-group .notes-btn {
+  padding: 4px 8px;
+  border-radius: 0;
+}
+
+.notes-btn-group .notes-btn:not(:last-child) {
+  border-right: 1px solid #d4d4d4;
+}
+
+.notes-toolbar__spacer {
+  flex: 1;
+}
+
+.notes-search {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #d4d4d4;
+  border-radius: 6px;
+  padding: 4px 8px;
+  width: 140px;
+}
+
+.notes-search-icon {
+  color: #888;
+  margin-right: 6px;
+}
+
+.notes-search-input {
+  border: none;
+  outline: none;
+  background: transparent;
+  width: 100%;
+  font-size: 13px;
+  color: #333;
+}
+
+.notes-layout {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+
+/* Sidebar */
+.notes-sidebar {
+  width: 220px;
+  min-width: 220px;
+  background-color: #f6f6f6;
+  border-right: 1px solid #e1e1e1;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-sidebar__section {
+  flex: 1;
+  padding: 12px;
+}
+
+.notes-sidebar__title {
+  font-size: 11px;
+  color: #888;
+  font-weight: 600;
+  margin: 0 0 8px 8px;
+}
+
+.notes-sidebar__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notes-sidebar__item {
+  display: flex;
+  align-items: center;
+  padding: 6px 8px;
+  border-radius: 6px;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  gap: 8px;
+}
+
+.notes-sidebar__item svg {
+  color: #3b82f6; /* macOS folder blue */
+}
+
+.notes-sidebar__item:hover {
+  background-color: #e5e5e5;
+}
+
+.notes-sidebar__item.active {
+  background-color: #dfdfdf;
+  font-weight: 500;
+}
+
+.notes-sidebar__bottom {
+  padding: 12px;
+  border-top: 1px solid #e1e1e1;
+}
+
+.notes-new-folder-btn {
+  background: transparent;
+  border: none;
+  color: #666;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.notes-new-folder-btn:hover {
+  color: #333;
+}
+
+/* List Column */
+.notes-list-col {
+  width: 280px;
+  min-width: 280px;
+  border-right: 1px solid #e1e1e1;
+  background: #fff;
+  overflow-y: auto;
+}
+
+.notes-list-item {
+  padding: 12px 16px;
+  border-bottom: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.notes-list-item:hover {
+  background-color: #f9f9f9;
+}
+
+.notes-list-item.active {
+  background-color: #f6d165; /* Yellow highlight from image */
+  border-radius: 8px;
+  margin: 8px;
+  padding: 12px;
+  border-bottom: none;
+}
+
+.notes-list-item__title {
+  font-weight: 600;
+  font-size: 14px;
+  color: #111;
+  margin-bottom: 4px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notes-list-item__preview {
+  font-size: 13px;
+  color: #666;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.notes-list-item.active .notes-list-item__title,
+.notes-list-item.active .notes-list-item__preview {
+  color: #5d4a13; /* Darker text for contrast on yellow */
+}
+
+.notes-list-item__excerpt {
+  color: #999;
+}
+
+.notes-list-item.active .notes-list-item__excerpt {
+  color: #8c7329;
+}
+
+
+/* Editor */
+.notes-editor {
+  flex: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.notes-editor__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 24px 40px;
+}
+
+.notes-editor__date {
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  margin-bottom: 24px;
+}
+
+.notes-editor__textarea {
+  flex: 1;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+.notes-editor__rich-text {
+  overflow-y: auto;
+  white-space: pre-wrap;
+}
+
+.notes-editor__rich-text:empty:before {
+  content: attr(data-placeholder);
+  color: #999;
+  pointer-events: none;
+}
+
+.notes-editor__empty {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  font-size: 16px;
+}

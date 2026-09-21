@@ -1,0 +1,238 @@
+.qt-window-wrapper.window {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25), 0 0 0 1px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.qt-titlebar {
+  height: 38px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(180deg, #ebebeb 0%, #d6d6d6 100%);
+  border-bottom: 1px solid #c0c0c0;
+  position: relative;
+  user-select: none;
+  width: 100%;
+}
+
+.qt-traffic-lights {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.qt-titlebar-title {
+  color: #1d1d1f;
+  font-size: 13px;
+  font-weight: 500;
+  text-shadow: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.qt-layout {
+  display: flex;
+  height: 100%;
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+/* SIDEBAR */
+.qt-sidebar {
+  width: 240px;
+  background: rgba(230, 230, 230, 0.6);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 20;
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow-y: auto;
+}
+
+.qt-sidebar.visible {
+  transform: translateX(0);
+}
+
+.qt-sidebar-title {
+  color: #666;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 16px 16px 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.qt-sidebar-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 8px 12px;
+}
+
+.qt-sidebar-item {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.qt-sidebar-item:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.qt-sidebar-item.active {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.qt-sidebar-thumb {
+  width: 100%;
+  height: auto;
+  border-radius: 4px;
+  background: #fff;
+  pointer-events: none;
+}
+
+.qt-sidebar-label {
+  color: #333;
+  font-size: 11px;
+  text-align: center;
+  word-break: break-word;
+}
+
+/* PLAYER AREA */
+.qt-player-area {
+  flex: 1;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  overflow: hidden;
+}
+
+.qt-video-element {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* CONTROLS */
+.qt-controls-container {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  z-index: 30;
+}
+
+.qt-controls-container.visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.qt-controls-panel {
+  background: rgba(45, 45, 45, 0.85);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+  padding: 12px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  min-width: 380px;
+}
+
+.qt-controls-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+}
+
+.qt-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  opacity: 0.8;
+  transition: opacity 0.2s, transform 0.1s;
+}
+
+.qt-btn:hover {
+  opacity: 1;
+}
+
+.qt-btn:active {
+  transform: scale(0.95);
+}
+
+.qt-btn-play {
+  color: #fff;
+}
+
+.qt-progress-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.qt-time {
+  color: #ccc;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  min-width: 36px;
+}
+
+.qt-scrubber {
+  flex: 1;
+  -webkit-appearance: none;
+  background: transparent;
+  height: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.qt-scrubber::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 2px;
+}
+
+.qt-scrubber::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fff;
+  margin-top: -4px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.4);
+}

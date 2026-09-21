@@ -1,0 +1,52 @@
+/* ──────────────────────────────────────────────────────────────
+   DesktopPage — macOS desktop with purple checker wallpaper
+   Matches Figma reference exactly.
+   ────────────────────────────────────────────────────────────── */
+
+.desktop {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* ── Desktop area ──────────────────────────────────────────── */
+.desktop__area {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+
+  /* Purple/lavender checker pattern via CSS —
+     alternating squares of two purple shades */
+  --checker-light: #d4b8e8;
+  --checker-dark: #b898d4;
+  --checker-size: 80px;
+
+  background-color: var(--checker-dark);
+  background-image:
+    /* Top-left squares */
+    linear-gradient(45deg,
+      var(--checker-light) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--checker-light) 75%
+    ),
+    linear-gradient(45deg,
+      var(--checker-light) 25%,
+      transparent 25%,
+      transparent 75%,
+      var(--checker-light) 75%
+    );
+  background-size: var(--checker-size) var(--checker-size);
+  background-position:
+    0 0,
+    calc(var(--checker-size) / 2) calc(var(--checker-size) / 2);
+}
+
+/* Image shown in the window "Prima di Photoshop..." */
+.desktop-page__preview-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
