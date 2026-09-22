@@ -9,7 +9,7 @@ import './FirstPage.css';
  * Much smoother than stroke-dashoffset since it's a GPU-accelerated CSS animation.
  */
 
-const GREETINGS = Array.from({ length: 16 }, (_, i) => `/svg_hello/hello${i + 1}.svg`);
+const GREETINGS = Array.from({ length: 16 }, (_, i) => `${import.meta.env.BASE_URL}svg_hello/hello${i + 1}.svg`);
 
 const DRAW_DURATION = 1680;     // ms for the left-to-right reveal (+20%)
 const PAUSE_AFTER_DRAW = 960;   // ms to hold fully visible (+20%)
