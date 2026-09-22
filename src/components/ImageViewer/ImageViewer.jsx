@@ -12,7 +12,9 @@ const COLLECTIONS = {
   ],
   '7days': [
     { id: 'img1', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/06:11:25.jpg', name: '06:11:25.jpg' },
-    { id: 'img2', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Vincitori_7DAYSBRIEF_2025.JPG', name: 'Vincitori_7DAYSBRIEF_2025.JPG' },
+    { id: 'img2', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Vincitori_7DAYSBRIEF_2025.JPG', name: 'Vincitori_7DAYSBRIEF_2025.JPG' }
+  ],
+  'articoli': [
     { id: 'img3', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Screenshot 2026-09-09 alle 21.54.57.png', name: 'Screenshot 2026-09-09 alle 21.54.57.png' },
     { id: 'img4', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/screen_vanityfair.png', name: 'screen_vanityfair.png' }
   ],

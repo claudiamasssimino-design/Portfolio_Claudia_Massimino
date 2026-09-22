@@ -45,8 +45,8 @@ export default function CalendarApp({ onClose, initialX = 150, initialY = 100 })
       title="Calendario"
       initialX={initialX}
       initialY={initialY}
-      width={760}
-      height={520}
+      width={874}
+      height={598}
       onClose={onClose}
       customTitlebar={customTitlebar}
     >

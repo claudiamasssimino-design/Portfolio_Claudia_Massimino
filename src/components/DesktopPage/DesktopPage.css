@@ -20,7 +20,7 @@
      alternating squares of two purple shades */
   --checker-light: #d4b8e8;
   --checker-dark: #b898d4;
-  --checker-size: 80px;
+  --checker-size: 147px;
 
   background-color: var(--checker-dark);
   background-image:

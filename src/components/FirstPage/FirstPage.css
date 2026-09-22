@@ -22,73 +22,13 @@
 
 /* ── Greeting image ────────────────────────────────────────── */
 .first-page__greeting {
-  max-width: min(50vw, 420px);
-  max-height: min(22vh, 220px);
+  max-width: min(57.5vw, 483px);
+  max-height: min(25.3vh, 253px);
   height: auto;
   width: auto;
   object-fit: contain;
 
   pointer-events: none;
-
-  /* ── Left-to-right reveal mask ───────────────────────────
-     A gradient mask sweeps from left to right.
-     - mask-size is 300% wide so the opaque region can start
-       off-screen to the right and sweep across.
-     - The gradient has a soft leading edge for a natural feel.
-     ──────────────────────────────────────────────────────── */
-  -webkit-mask-image: linear-gradient(
-    to right,
-    black 0%,
-    black 30%,
-    transparent 50%,
-    transparent 100%
-  );
-  mask-image: linear-gradient(
-    to right,
-    black 0%,
-    black 30%,
-    transparent 50%,
-    transparent 100%
-  );
-  -webkit-mask-size: 350% 100%;
-  mask-size: 350% 100%;
-  -webkit-mask-repeat: no-repeat;
-  mask-repeat: no-repeat;
-}
-
-/* ── Revealing: mask sweeps left to right ───────────────────── */
-.first-page__greeting--revealing {
-  -webkit-mask-position: 100% 0;
-  mask-position: 100% 0;
-  animation: wipe-reveal 1.68s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
-  opacity: 1;
-}
-
-/* ── Visible: fully revealed ───────────────────────────────── */
-.first-page__greeting--visible {
-  -webkit-mask-position: 0% 0;
-  mask-position: 0% 0;
-  opacity: 1;
-}
-
-/* ── Fading out ────────────────────────────────────────────── */
-.first-page__greeting--fading-out {
-  -webkit-mask-position: 0% 0;
-  mask-position: 0% 0;
-  opacity: 0;
-  transition: opacity 360ms var(--ease-apple);
-}
-
-/* ── Wipe animation keyframes ──────────────────────────────── */
-@keyframes wipe-reveal {
-  from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-  }
-  to {
-    -webkit-mask-position: 0% 0;
-    mask-position: 0% 0;
-  }
 }
 
 /* ── Subtitle section at bottom ────────────────────────────── */

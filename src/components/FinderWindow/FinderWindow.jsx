@@ -42,8 +42,8 @@ export default function FinderWindow({
   const vfsData = {
     'crispy': {
       'root': [
-        { id: 'ooh', name: 'OOH', type: 'folder' },
-        { id: 'tvc', name: 'TVC', type: 'folder' }
+        { id: 'ooh', name: 'OOH_002', type: 'folder' },
+        { id: 'tvc', name: 'TVC_001', type: 'folder' }
       ],
       'tvc': [
         { id: 'v1', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' },
@@ -55,22 +55,24 @@ export default function FinderWindow({
     '7days': {
       'root': [
         { id: 'abbiamo_vinto', name: 'ABBIAMO VINTOOO', type: 'folder' },
-        { id: 'film', name: 'film', type: 'folder' }
+        { id: 'film', name: 'FILM_001', type: 'folder' },
+        { id: 'articoli', name: 'ARTICOLI', type: 'folder' }
       ],
       'abbiamo_vinto': [],
       'film': [
         { id: 'f1', name: '7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' }
-      ]
+      ],
+      'articoli': []
     },
     'iliad': {
       'root': [
-        { id: 'tvc', name: 'tvc', type: 'folder' }
+        { id: 'tvc', name: 'TVC_001', type: 'folder' }
       ],
       'tvc': []
     },
     'orosaiwa': {
       'root': [
-        { id: 'orosaiwa_tvc', name: 'OROSAIWA_TVC', type: 'folder' }
+        { id: 'orosaiwa_tvc', name: 'TVC_001', type: 'folder' }
       ],
       'orosaiwa_tvc': []
     },
@@ -109,6 +111,10 @@ export default function FinderWindow({
       } else if (item.id === 'film') {
         if (onOpenFile) {
           onOpenFile({ type: 'video', collection: '7days', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' });
+        }
+      } else if (item.id === 'articoli') {
+        if (onOpenFile) {
+          onOpenFile({ type: 'image-viewer', collection: 'articoli', title: 'ARTICOLI', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Screenshot 2026-09-09 alle 21.54.57.png' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
