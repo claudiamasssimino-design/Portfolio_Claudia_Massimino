@@ -4,25 +4,25 @@ import './ImageViewer.css';
 
 const COLLECTIONS = {
   crispy: [
-    { id: 'img1', src: '/FOTO PORTFOLIO/crispy1.png', name: 'crispy1.png' },
-    { id: 'img2', src: '/FOTO PORTFOLIO/crispy2.png', name: 'crispy2.png' },
-    { id: 'img3', src: '/FOTO PORTFOLIO/crispy3.png', name: 'crispy3.png' },
-    { id: 'img4', src: '/FOTO PORTFOLIO/crispy4.png', name: 'crispy4.png' },
-    { id: 'img5', src: '/FOTO PORTFOLIO/crispy5.png', name: 'crispy5.png' }
+    { id: 'img1', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/crispy1.png', name: 'crispy1.png' },
+    { id: 'img2', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/crispy2.png', name: 'crispy2.png' },
+    { id: 'img3', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/crispy3.png', name: 'crispy3.png' },
+    { id: 'img4', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/crispy4.png', name: 'crispy4.png' },
+    { id: 'img5', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/crispy5.png', name: 'crispy5.png' }
   ],
   '7days': [
-    { id: 'img1', src: '/FOTO PORTFOLIO/06:11:25.jpg', name: '06:11:25.jpg' },
-    { id: 'img2', src: '/FOTO PORTFOLIO/Vincitori_7DAYSBRIEF_2025.JPG', name: 'Vincitori_7DAYSBRIEF_2025.JPG' },
-    { id: 'img3', src: '/FOTO PORTFOLIO/Screenshot 2026-09-09 alle 21.54.57.png', name: 'Screenshot 2026-09-09 alle 21.54.57.png' },
-    { id: 'img4', src: '/FOTO PORTFOLIO/screen_vanityfair.png', name: 'screen_vanityfair.png' }
+    { id: 'img1', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/06:11:25.jpg', name: '06:11:25.jpg' },
+    { id: 'img2', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Vincitori_7DAYSBRIEF_2025.JPG', name: 'Vincitori_7DAYSBRIEF_2025.JPG' },
+    { id: 'img3', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Screenshot 2026-09-09 alle 21.54.57.png', name: 'Screenshot 2026-09-09 alle 21.54.57.png' },
+    { id: 'img4', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/screen_vanityfair.png', name: 'screen_vanityfair.png' }
   ],
   'ped': [
-    { id: 'p1', src: '/FOTO PORTFOLIO/WD_PL_1.png', name: 'WD_PL_1.png' },
-    { id: 'p2', src: '/FOTO PORTFOLIO/SM_DAY.png', name: 'SM_DAY.png' },
-    { id: 'p3', src: '/FOTO PORTFOLIO/Sanremo_2.png', name: 'Sanremo_2.png' },
-    { id: 'p4', src: '/FOTO PORTFOLIO/Sanremo_1.png', name: 'Sanremo_1.png' },
-    { id: 'p5', src: '/FOTO PORTFOLIO/Launch_Matcha.png', name: 'Launch_Matcha.png' },
-    { id: 'p6', src: '/FOTO PORTFOLIO/10_MA.png', name: '10_MA.png' }
+    { id: 'p1', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/WD_PL_1.png', name: 'WD_PL_1.png' },
+    { id: 'p2', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/SM_DAY.png', name: 'SM_DAY.png' },
+    { id: 'p3', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Sanremo_2.png', name: 'Sanremo_2.png' },
+    { id: 'p4', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Sanremo_1.png', name: 'Sanremo_1.png' },
+    { id: 'p5', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Launch_Matcha.png', name: 'Launch_Matcha.png' },
+    { id: 'p6', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/10_MA.png', name: '10_MA.png' }
   ]
 };
 

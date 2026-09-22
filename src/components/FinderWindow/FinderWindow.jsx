@@ -19,7 +19,7 @@ const Icons = {
   Tag: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><path d="M20.59 13.41l-7.17 7.17a2 2 0 0 1-2.83 0L2 12V2h10l8.59 8.59a2 2 0 0 1 0 2.82z"></path><line x1="7" y1="7" x2="7.01" y2="7"></line></svg>,
   More: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="1"></circle><circle cx="19" cy="12" r="1"></circle><circle cx="5" cy="12" r="1"></circle></svg>,
   Search: () => <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>,
-  Folder: () => <img src="/icons/cartella.png" alt="Cartella" style={{ width: '48px', height: '48px', objectFit: 'contain' }} draggable="false" />
+  Folder: () => <img src={import.meta.env.BASE_URL + 'icons/cartella.png'} alt="Cartella" style={{ width: '48px', height: '48px', objectFit: 'contain' }} draggable="false" />
 };
 
 /**
@@ -46,9 +46,9 @@ export default function FinderWindow({
         { id: 'tvc', name: 'TVC', type: 'folder' }
       ],
       'tvc': [
-        { id: 'v1', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4', type: 'video', src: '/TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' },
-        { id: 'v2', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4', type: 'video', src: '/TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4' },
-        { id: 'v3', name: 'McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4', type: 'video', src: '/TVC PORTFOLIO/McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4' }
+        { id: 'v1', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' },
+        { id: 'v2', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4' },
+        { id: 'v3', name: 'McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4' }
       ],
       'ooh': []
     },
@@ -59,7 +59,7 @@ export default function FinderWindow({
       ],
       'abbiamo_vinto': [],
       'film': [
-        { id: 'f1', name: '7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4', type: 'video', src: '/TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' }
+        { id: 'f1', name: '7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' }
       ]
     },
     'iliad': {
@@ -90,11 +90,11 @@ export default function FinderWindow({
     if (folderId === 'crispy') {
       if (item.id === 'tvc') {
         if (onOpenFile) {
-          onOpenFile({ src: '/TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' });
+          onOpenFile({ src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' });
         }
       } else if (item.id === 'ooh') {
         if (onOpenFile) {
-          onOpenFile({ type: 'image-viewer', collection: 'crispy', title: 'CRISPY OOH', src: '/FOTO PORTFOLIO/crispy1.png' });
+          onOpenFile({ type: 'image-viewer', collection: 'crispy', title: 'CRISPY OOH', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/crispy1.png' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -104,11 +104,11 @@ export default function FinderWindow({
     } else if (folderId === '7days') {
       if (item.id === 'abbiamo_vinto') {
         if (onOpenFile) {
-          onOpenFile({ type: 'image-viewer', collection: '7days', title: 'ABBIAMO VINTOOO', src: '/FOTO PORTFOLIO/06:11:25.jpg' });
+          onOpenFile({ type: 'image-viewer', collection: '7days', title: 'ABBIAMO VINTOOO', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/06:11:25.jpg' });
         }
       } else if (item.id === 'film') {
         if (onOpenFile) {
-          onOpenFile({ type: 'video', collection: '7days', src: '/TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' });
+          onOpenFile({ type: 'video', collection: '7days', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -118,7 +118,7 @@ export default function FinderWindow({
     } else if (folderId === 'iliad') {
       if (item.id === 'tvc') {
         if (onOpenFile) {
-          onOpenFile({ type: 'video', collection: 'iliad', src: '/TVC PORTFOLIO/iliad_tvc_1.mp4' });
+          onOpenFile({ type: 'video', collection: 'iliad', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/iliad_tvc_1.mp4' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -128,7 +128,7 @@ export default function FinderWindow({
     } else if (folderId === 'orosaiwa') {
       if (item.id === 'orosaiwa_tvc') {
         if (onOpenFile) {
-          onOpenFile({ type: 'video', collection: 'orosaiwa', src: '/TVC PORTFOLIO/Spot Oro Saiwa_La TUA colazione ogni giorno.mp4' });
+          onOpenFile({ type: 'video', collection: 'orosaiwa', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Spot Oro Saiwa_La TUA colazione ogni giorno.mp4' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -138,7 +138,7 @@ export default function FinderWindow({
     } else if (folderId === 'ped') {
       if (item.id === 'post') {
         if (onOpenFile) {
-          onOpenFile({ type: 'image-viewer', collection: 'ped', title: 'POST', src: '/FOTO PORTFOLIO/WD_PL_1.png' });
+          onOpenFile({ type: 'image-viewer', collection: 'ped', title: 'POST', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/WD_PL_1.png' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);

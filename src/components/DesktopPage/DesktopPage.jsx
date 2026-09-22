@@ -125,7 +125,7 @@ export default function DesktopPage() {
           x="88%"
           y="8%"
           type="image"
-          iconSrc="/FOTO PORTFOLIO/Prima di Photoshop usavo i pastelli.png"
+          iconSrc={import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Prima di Photoshop usavo i pastelli.png'}
           onDoubleClick={() => setShowWindow(true)}
         />
 
@@ -212,7 +212,7 @@ export default function DesktopPage() {
           >
             <img
               className="desktop-page__preview-img"
-              src="/FOTO PORTFOLIO/Prima di Photoshop usavo i pastelli.png"
+              src={import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Prima di Photoshop usavo i pastelli.png'}
               alt="Prima di Photoshop usavo i pastelli — Opera artistica di Claudia Massimino"
               draggable="false"
             />

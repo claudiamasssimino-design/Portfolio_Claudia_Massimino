@@ -6,18 +6,18 @@ import './Dock.css';
  * Each has a tooltip quip shown on hover.
  */
 const DOCK_ITEMS = [
-  { id: 'finder',       label: 'Finder',       quip: 'So che quel file è qui da qualche parte',        icon: '/icons/finder.png' },
-  { id: 'chrome',       label: 'Chrome',        quip: 'Chiudere le tab porta sfortuna',                 icon: '/icons/chrome.png', action: () => window.open('https://www.linkedin.com/in/claudia-massimino-3a396a241/', '_blank') },
-  { id: 'mail',         label: 'Mail',          quip: 'Se ti ho convinto, clicca qui',                   icon: '/icons/mail.png', action: () => window.location.href = 'mailto:claudiamasssimino@gmail.com?subject=Contatto dal Portfolio' },
-  { id: 'spotify',      label: 'Spotify',       quip: 'No, Sal Da Vinci non è in playlist',              icon: '/icons/spotify.png' },
-  { id: 'photoshop',    label: 'Photoshop',     quip: '02_final_finalissimo_OK',                         icon: '/icons/photoshop.png' },
-  { id: 'illustrator',  label: 'Illustrator',   quip: '48 livelli chiamati "Livello 1" (scherzo)',       icon: '/icons/illustrator.png' },
-  { id: 'teams',        label: 'Teams',         quip: '«Hai un minuto?» Spoiler: no, ma OVVIO',          icon: '/icons/teams.png' },
-  { id: 'outlook',      label: 'Outlook',       quip: 'Le apro dopo, promesso',                          icon: '/icons/outlook.png', action: () => window.location.href = 'mailto:claudiamasssimino@gmail.com?subject=Contatto dal Portfolio' },
+  { id: 'finder',       label: 'Finder',       quip: 'So che quel file è qui da qualche parte',        icon: import.meta.env.BASE_URL + 'icons/finder.png' },
+  { id: 'chrome',       label: 'Chrome',        quip: 'Chiudere le tab porta sfortuna',                 icon: import.meta.env.BASE_URL + 'icons/chrome.png', action: () => window.open('https://www.linkedin.com/in/claudia-massimino-3a396a241/', '_blank') },
+  { id: 'mail',         label: 'Mail',          quip: 'Se ti ho convinto, clicca qui',                   icon: import.meta.env.BASE_URL + 'icons/mail.png', action: () => window.location.href = 'mailto:claudiamasssimino@gmail.com?subject=Contatto dal Portfolio' },
+  { id: 'spotify',      label: 'Spotify',       quip: 'No, Sal Da Vinci non è in playlist',              icon: import.meta.env.BASE_URL + 'icons/spotify.png' },
+  { id: 'photoshop',    label: 'Photoshop',     quip: '02_final_finalissimo_OK',                         icon: import.meta.env.BASE_URL + 'icons/photoshop.png' },
+  { id: 'illustrator',  label: 'Illustrator',   quip: '48 livelli chiamati "Livello 1" (scherzo)',       icon: import.meta.env.BASE_URL + 'icons/illustrator.png' },
+  { id: 'teams',        label: 'Teams',         quip: '«Hai un minuto?» Spoiler: no, ma OVVIO',          icon: import.meta.env.BASE_URL + 'icons/teams.png' },
+  { id: 'outlook',      label: 'Outlook',       quip: 'Le apro dopo, promesso',                          icon: import.meta.env.BASE_URL + 'icons/outlook.png', action: () => window.location.href = 'mailto:claudiamasssimino@gmail.com?subject=Contatto dal Portfolio' },
 ];
 
 const TRASH_ITEM = {
-  id: 'trash', label: 'Cestino', quip: 'Qui riposa FINAL_07', icon: '/icons/cestino.png'
+  id: 'trash', label: 'Cestino', quip: 'Qui riposa FINAL_07', icon: import.meta.env.BASE_URL + 'icons/cestino.png'
 };
 
 export default function Dock() {

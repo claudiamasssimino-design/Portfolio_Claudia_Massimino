@@ -74,9 +74,9 @@ export default function DesktopIcon({ label, x, y, type, onDoubleClick, iconSrc 
       </div>
     );
   } else {
-    let src = '/icons/cartella.png';
+    let src = import.meta.env.BASE_URL + 'icons/cartella.png';
     if (type === 'note') {
-      src = '/icons/note.png';
+      src = import.meta.env.BASE_URL + 'icons/note.png';
     } else if (iconSrc) {
       src = iconSrc;
     }
