@@ -135,8 +135,8 @@ export default function DesktopPage() {
 
         {showCalendar && (
           <>
-            <CalendarApp onClose={() => setShowCalendar(false)} initialX={100} initialY={60} />
-            <StickyNote onClose={() => setShowCalendar(false)} initialX={500} initialY={220} />
+            <CalendarApp onClose={() => setShowCalendar(false)} initialX={100} initialY={260} />
+            <StickyNote onClose={() => setShowCalendar(false)} initialX={800} initialY={460} />
           </>
         )}
 

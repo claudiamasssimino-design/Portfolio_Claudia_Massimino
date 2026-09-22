@@ -4,13 +4,10 @@ import './QuickTimePlayer.css';
 
 const VIDEO_COLLECTIONS = {
   crispy: [
-    { id: 'v1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4', name: 'McD_Crispy_15sec_McDrive_sub_ita' },
-    { id: 'v2', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4', name: 'McD_Crispy_15sec_McDrive_mix_web' },
-    { id: 'v3', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4', name: 'McD_Crispy_15sec_Mom_sub_ita' },
-    { id: 'v4', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/MCD_McCRISPY_FOOD_2026_CHICKEN_20260313_v3_MixWeb.mp4', name: 'MCD_McCRISPY_CHICKEN' },
-    { id: 'v5', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/MCD_McCRISPY_FOOD_2026_RICCHE_20260313_v3_MixWeb.mp4', name: 'MCD_McCRISPY_RICCHE' },
-    { id: 'v6', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/MCD_McCRISPY_FOOD_2026_SWEET_20260313_MixWeb.mp4', name: 'MCD_McCRISPY_SWEET' },
-    { id: 'v7', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/MCD_McCRISPY_FOOD_2026_WRAP_20260313_v3_MixWeb.mp4', name: 'MCD_McCRISPY_WRAP' }
+    { id: 'v1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Club.mp4', name: 'McD_Crispy_15sec_Club' },
+    { id: 'v2', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Corsa.mp4', name: 'McD_Crispy_15sec_Corsa' },
+    { id: 'v3', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Famiglia.mp4', name: 'McD_Crispy_15sec_Famiglia' },
+    { id: 'v4', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Ufficio.mp4', name: 'McD_Crispy_15sec_Ufficio' }
   ],
   '7days': [
     { id: 'f1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4', name: '7 DAYS BRIEF 2025' }

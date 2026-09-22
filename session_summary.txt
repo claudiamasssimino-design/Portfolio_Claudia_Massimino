@@ -13,3 +13,8 @@ Session Summary (2026-09-17)
 - Updated Chrome icon in the Dock to open a LinkedIn profile in a new tab when clicked.
 - Fixed a global CSS issue where `.window__content img` was overriding specific image sizes, which caused both the Calendar stickers and the "Prima di Photoshop" image to break.
 - Restored Calendar sticker sizes to the original design (140px) and fixed the "Prima di Photoshop" preview window to perfectly match its intrinsic aspect ratio (420x588) so it fits edge-to-edge without zooming or cropping.
+
+Session Summary (2026-09-22)
+- Updated Crispy TVC videos, removing the old ones and linking the 4 new ones.
+- Fixed folder label alignment in FinderWindow to properly center multiline text.
+- Adjusted Calendar and StickyNote initial positions to correctly appear in the lower part of the screen, with the sticky note offset to the right.

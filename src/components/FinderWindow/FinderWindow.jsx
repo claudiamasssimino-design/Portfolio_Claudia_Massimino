@@ -46,9 +46,10 @@ export default function FinderWindow({
         { id: 'tvc', name: 'TVC_001', type: 'folder' }
       ],
       'tvc': [
-        { id: 'v1', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' },
-        { id: 'v2', name: 'McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web.mp4' },
-        { id: 'v3', name: 'McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_Mom_20260313_mix web_sub ita.mp4' }
+        { id: 'v1', name: 'McD_Crispy_15sec_Club.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Club.mp4' },
+        { id: 'v2', name: 'McD_Crispy_15sec_Corsa.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Corsa.mp4' },
+        { id: 'v3', name: 'McD_Crispy_15sec_Famiglia.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Famiglia.mp4' },
+        { id: 'v4', name: 'McD_Crispy_15sec_Ufficio.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Ufficio.mp4' }
       ],
       'ooh': []
     },
@@ -92,7 +93,7 @@ export default function FinderWindow({
     if (folderId === 'crispy') {
       if (item.id === 'tvc') {
         if (onOpenFile) {
-          onOpenFile({ src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_16x9_McDrive_20260313_mix web_sub ita.mp4' });
+          onOpenFile({ src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Club.mp4' });
         }
       } else if (item.id === 'ooh') {
         if (onOpenFile) {
