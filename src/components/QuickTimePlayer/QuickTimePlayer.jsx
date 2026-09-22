@@ -17,7 +17,7 @@ const VIDEO_COLLECTIONS = {
   ],
   'iliad': [
     { id: 'i1', src: '/TVC PORTFOLIO/iliad_tvc_1.mp4', name: 'iliad_tvc_1' },
-    { id: 'i2', src: '/TVC PORTFOLIO/iliad_tvc_2.mp4', name: 'iliad_tvc_2' }
+    { id: 'i2', src: '/TVC PORTFOLIO/Poche cose sono per sempre. Benvenuta, Megan!.mp4', name: 'Poche cose sono per sempre' }
   ],
   'orosaiwa': [
     { id: 'o1', src: '/TVC PORTFOLIO/Spot Oro Saiwa_La TUA colazione ogni giorno.mp4', name: 'Spot Oro Saiwa' }
