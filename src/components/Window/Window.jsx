@@ -170,8 +170,6 @@ export default function Window({
 
           {/* Breadcrumb-style title */}
           <div className="window__breadcrumb">
-            <span className="window__breadcrumb-icon">📄</span>
-            <span className="window__breadcrumb-chevron">›</span>
             <span className="window__breadcrumb-text">{title}</span>
           </div>
         </div>

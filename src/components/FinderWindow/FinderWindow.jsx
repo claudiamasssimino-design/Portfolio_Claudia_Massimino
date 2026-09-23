@@ -29,7 +29,7 @@ export default function FinderWindow({
   title = "Tom's Guide",
   initialX = 100,
   initialY = 80,
-  width = 800,
+  width = 900,
   height = 500,
   onClose,
   onOpenFile, // New prop to notify parent when a file is double clicked
@@ -189,7 +189,7 @@ export default function FinderWindow({
       <div className="finder-topbar__main">
         {/* Main Toolbar */}
         <div className="finder-toolbar">
-          <div className="finder-toolbar__nav">
+          <div className="finder-toolbar__left">
             <div className="finder-nav-buttons">
               <button className="finder-nav-btn" onClick={handleBack} disabled={currentPath.length <= 1}>
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
@@ -199,9 +199,7 @@ export default function FinderWindow({
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
               </button>
             </div>
-          </div>
 
-          <div className="finder-toolbar__title">
             <div className="finder-title-container">
               <span>{title}</span>
             </div>
@@ -320,7 +318,7 @@ export default function FinderWindow({
               <Icons.Cloud /> <span>iCloud Drive</span>
             </div>
             <div className="finder-sidebar__item">
-              <Icons.Home /> <span>davidcrookes</span>
+              <Icons.Home /> <span>claudiamassimino</span>
             </div>
             <div className="finder-sidebar__item">
               <Icons.Document /> <span>LibreOffice</span>

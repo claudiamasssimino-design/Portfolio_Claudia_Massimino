@@ -18,3 +18,16 @@ Session Summary (2026-09-22)
 - Updated Crispy TVC videos, removing the old ones and linking the 4 new ones.
 - Fixed folder label alignment in FinderWindow to properly center multiline text.
 - Adjusted Calendar and StickyNote initial positions to correctly appear in the lower part of the screen, with the sticky note offset to the right.
+
+Session Summary (2026-09-23)
+- Renamed TVC and PED media files (7DAYS, ILIAD, Oro Saiwa, and 10/10_MA) both in the filesystem and within the application's virtual file system components (QuickTimePlayer, ImageViewer, FinderWindow).
+- Reordered media items within the ILIAD and PED collections as requested.
+- Updated dock tooltips (quips) for Finder, Chrome, Mail, Photoshop, Illustrator, and Outlook.
+- Fixed a bug where double-clicking a desktop folder while its Finder window was hidden (minimized) but its InfoPanel was open would not un-minimize the Finder window.
+- Fixed a UI artifact/seam in FinderWindow by moving the backdrop-filter blur from the individual sidebar components up to the main window wrapper.
+- Uniformed border-radius to 16px across all windows and panels (`Window`, `FinderWindow`, `ImageViewer`, `QuickTimePlayer`, `InfoPanel`, `CalendarApp`).
+- Refactored Finder toolbar to place the folder title on a single line adjacent to navigation arrows with 10px gap and ellipsis (`...`) text truncation.
+- Fixed Finder layout step (gradino) issue by ensuring the sidebar remains fixed-width with `flex-shrink: 0`.
+- Uniformed the default "Prima di Photoshop usavo i pastelli.png" window with other image viewers using `ImageViewer`.
+- Disabled hover sidebar in `ImageViewer` when viewing a single image collection.
+- Sized the "Prima di Photoshop" window to 810x567px (reduced by 10% from 900x630px).

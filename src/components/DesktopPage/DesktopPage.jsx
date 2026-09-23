@@ -205,21 +205,16 @@ export default function DesktopPage() {
 
         {/* Default window: "Prima di Photoshop usavo i pastelli" */}
         {showWindow && (
-          <Window
-            title="Prima di Photoshop usavo i pastelli.png"
-            initialX={300}
-            initialY={60}
-            width={600}
-            height={420}
+          <ImageViewer
+            initialSrc={import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Prima di Photoshop usavo i pastelli.png'}
+            collection="pastelli"
+            sidebarTitle="Prima di Photoshop"
+            initialWidth={810}
+            initialHeight={567}
+            initialX={240}
+            initialY={70}
             onClose={handleCloseWindow}
-          >
-            <img
-              className="desktop-page__preview-img"
-              src={import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Prima di Photoshop usavo i pastelli.png'}
-              alt="Prima di Photoshop usavo i pastelli — Opera artistica di Claudia Massimino"
-              draggable="false"
-            />
-          </Window>
+          />
         )}
       </div>
 
