@@ -34,6 +34,7 @@ export default function FinderWindow({
   onClose,
   onOpenFile, // New prop to notify parent when a file is double clicked
   folderId = 'crispy',
+  openTrigger,
   children
 }) {
   // Virtual File System
@@ -61,7 +62,7 @@ export default function FinderWindow({
       ],
       'abbiamo_vinto': [],
       'film': [
-        { id: 'f1', name: '7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' }
+        { id: 'f1', name: '7DAYSBRIEF_2025_Video mai pubblicato.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7DAYSBRIEF_2025_Video mai pubblicato.mp4' }
       ],
       'articoli': []
     },
@@ -111,7 +112,7 @@ export default function FinderWindow({
         }
       } else if (item.id === 'film') {
         if (onOpenFile) {
-          onOpenFile({ type: 'video', collection: '7days', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4' });
+          onOpenFile({ type: 'video', collection: '7days', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7DAYSBRIEF_2025_Video mai pubblicato.mp4' });
         }
       } else if (item.id === 'articoli') {
         if (onOpenFile) {
@@ -125,7 +126,7 @@ export default function FinderWindow({
     } else if (folderId === 'iliad') {
       if (item.id === 'tvc') {
         if (onOpenFile) {
-          onOpenFile({ type: 'video', collection: 'iliad', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/iliad_tvc_1.mp4' });
+          onOpenFile({ type: 'video', collection: 'iliad', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Poche cose sono per sempre_Benvenuta, Megan!.mp4' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -135,7 +136,7 @@ export default function FinderWindow({
     } else if (folderId === 'orosaiwa') {
       if (item.id === 'orosaiwa_tvc') {
         if (onOpenFile) {
-          onOpenFile({ type: 'video', collection: 'orosaiwa', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Spot Oro Saiwa_La TUA colazione ogni giorno.mp4' });
+          onOpenFile({ type: 'video', collection: 'orosaiwa', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/La TUA colazione ogni giorno_2026.mp4' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -281,6 +282,7 @@ export default function FinderWindow({
       onClose={onClose}
       customTitlebar={customTitlebar}
       className="finder-window-wrapper"
+      openTrigger={openTrigger}
     >
       <div className="finder-layout">
         {/* Sidebar */}

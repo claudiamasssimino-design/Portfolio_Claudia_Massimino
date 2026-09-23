@@ -10,14 +10,14 @@ const VIDEO_COLLECTIONS = {
     { id: 'v4', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Ufficio.mp4', name: 'McD_Crispy_15sec_Ufficio' }
   ],
   '7days': [
-    { id: 'f1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7 DAYS BRIEF 2025 _ Video mai pubblicato..mp4', name: '7 DAYS BRIEF 2025' }
+    { id: 'f1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/7DAYSBRIEF_2025_Video mai pubblicato.mp4', name: '7DAYSBRIEF_2025_Video mai pubblicato' }
   ],
   'iliad': [
-    { id: 'i1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/iliad_tvc_1.mp4', name: 'iliad_tvc_1' },
-    { id: 'i2', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Poche cose sono per sempre. Benvenuta, Megan!.mp4', name: 'Poche cose sono per sempre' }
+    { id: 'i1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Poche cose sono per sempre_Benvenuta, Megan!.mp4', name: 'Poche cose sono per sempre_Benvenuta, Megan!' },
+    { id: 'i2', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Poche cose sono per sempre_parlano i fatti.mp4', name: 'Poche cose sono per sempre_parlano i fatti' }
   ],
   'orosaiwa': [
-    { id: 'o1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/Spot Oro Saiwa_La TUA colazione ogni giorno.mp4', name: 'Spot Oro Saiwa' }
+    { id: 'o1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/La TUA colazione ogni giorno_2026.mp4', name: 'La TUA colazione ogni giorno_2026' }
   ]
 };
 

@@ -3,20 +3,23 @@
   /* Override default window styles */
   background-color: transparent;
   border: none;
-  box-shadow: 0 10px 30px rgba(0,0,0,0.2);
-  border-radius: 4px; /* Less rounded than normal window */
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  /* Less rounded than normal window */
   overflow: hidden;
 }
 
 .sticky-note-window .window__content {
-  background-color: #fef08a; /* Yellow */
+  background-color: #fef08a;
+  /* Yellow */
 }
 
 /* Toolbar */
 .sticky-note-toolbar {
   display: flex;
   height: 32px;
-  background-color: #fde047; /* Slightly darker yellow for header */
+  background-color: #fde047;
+  /* Slightly darker yellow for header */
   align-items: center;
   padding: 0 10px;
   box-sizing: border-box;

@@ -33,6 +33,7 @@ export default function DesktopPage() {
   const [showNotes, setShowNotes] = useState(false);
   const [showCalendar, setShowCalendar] = useState(false);
   const [openFolders, setOpenFolders] = useState([]);
+  const [folderTriggers, setFolderTriggers] = useState({});
   const [openInfoPanels, setOpenInfoPanels] = useState([]);
   const [playingVideos, setPlayingVideos] = useState([]);
   const [viewingImages, setViewingImages] = useState([]);
@@ -48,6 +49,7 @@ export default function DesktopPage() {
       }
       return prev;
     });
+    setFolderTriggers(prev => ({ ...prev, [folderId]: Date.now() }));
     setOpenInfoPanels(prev => {
       if (!prev.includes(folderId)) {
         return [...prev, folderId];
@@ -165,6 +167,7 @@ export default function DesktopPage() {
                 }}
                 initialX={150}
                 initialY={150}
+                openTrigger={folderTriggers[folderId]}
               />
               {openInfoPanels.includes(folderId) && (
                 <InfoPanel 

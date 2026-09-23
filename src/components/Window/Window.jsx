@@ -19,6 +19,7 @@ export default function Window({
   customTitlebar,
   className = '',
   onKeyDown,
+  openTrigger,
 }) {
   const [position, setPosition] = useState({ x: initialX, y: initialY });
   const [size, setSize] = useState({ w: initialWidth, h: initialHeight });
@@ -48,6 +49,13 @@ export default function Window({
   useEffect(() => {
     focusWindow();
   }, [focusWindow]);
+
+  useEffect(() => {
+    if (openTrigger) {
+      setIsMinimized(false);
+      focusWindow();
+    }
+  }, [openTrigger, focusWindow]);
 
   /* ── Drag handlers ─────────────────────────────────────── */
   const handleMouseDown = useCallback((e) => {

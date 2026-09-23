@@ -11,7 +11,9 @@
 
 /* OVERRIDES FOR DEFAULT WINDOW STYLES */
 .finder-window-wrapper.window {
-  background: transparent;
+  background: rgba(230, 230, 230, 0.7);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
   box-shadow: 0 22px 70px rgba(0, 0, 0, 0.2), 0 0 0 1px rgba(0,0,0,0.1);
 }
 
@@ -37,9 +39,7 @@
 
 .finder-topbar__sidebar {
   width: 220px;
-  background: rgba(230, 230, 230, 0.6);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  background: transparent;
   position: relative;
   z-index: 10;
 }
@@ -242,9 +242,7 @@
 /* SIDEBAR */
 .finder-sidebar {
   width: 220px;
-  background: rgba(230, 230, 230, 0.6);
-  backdrop-filter: blur(40px);
-  -webkit-backdrop-filter: blur(40px);
+  background: transparent;
   padding: 10px 12px;
   overflow-y: auto;
   position: relative;

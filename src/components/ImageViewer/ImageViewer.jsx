@@ -21,10 +21,10 @@ const COLLECTIONS = {
   'ped': [
     { id: 'p1', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/WD_PL_1.png', name: 'WD_PL_1.png' },
     { id: 'p2', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/SM_DAY.png', name: 'SM_DAY.png' },
-    { id: 'p3', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Sanremo_2.png', name: 'Sanremo_2.png' },
-    { id: 'p4', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Sanremo_1.png', name: 'Sanremo_1.png' },
+    { id: 'p3', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Sanremo_1.png', name: 'Sanremo_1.png' },
+    { id: 'p4', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Sanremo_2.png', name: 'Sanremo_2.png' },
     { id: 'p5', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Launch_Matcha.png', name: 'Launch_Matcha.png' },
-    { id: 'p6', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/10_MA.png', name: '10_MA.png' }
+    { id: 'p6', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/10_10_MA.png', name: '10/10_MA.png' }
   ]
 };
 
