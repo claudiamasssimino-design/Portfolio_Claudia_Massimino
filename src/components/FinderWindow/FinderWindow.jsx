@@ -43,8 +43,8 @@ export default function FinderWindow({
   const vfsData = {
     'crispy': {
       'root': [
-        { id: 'ooh', name: 'OOH_002', type: 'folder' },
-        { id: 'tvc', name: 'TVC_001', type: 'folder' }
+        { id: 'ooh', name: '02_OOH', type: 'folder' },
+        { id: 'tvc', name: '01_TVC', type: 'folder' }
       ],
       'tvc': [
         { id: 'v1', name: 'McD_Crispy_15sec_Club.mp4', type: 'video', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Club.mp4' },
@@ -56,9 +56,9 @@ export default function FinderWindow({
     },
     '7days': {
       'root': [
-        { id: 'abbiamo_vinto', name: 'ABBIAMO VINTOOO', type: 'folder' },
-        { id: 'film', name: 'FILM_001', type: 'folder' },
-        { id: 'articoli', name: 'ARTICOLI', type: 'folder' }
+        { id: 'abbiamo_vinto', name: 'ABBIAMO VINTO', type: 'folder' },
+        { id: 'film', name: '01_TVC', type: 'folder' },
+        { id: 'articoli', name: '02_ARTICOLI', type: 'folder' }
       ],
       'abbiamo_vinto': [],
       'film': [
@@ -68,19 +68,19 @@ export default function FinderWindow({
     },
     'iliad': {
       'root': [
-        { id: 'tvc', name: 'TVC_001', type: 'folder' }
+        { id: 'tvc', name: '01_TVC', type: 'folder' }
       ],
       'tvc': []
     },
     'orosaiwa': {
       'root': [
-        { id: 'orosaiwa_tvc', name: 'TVC_001', type: 'folder' }
+        { id: 'orosaiwa_tvc', name: '01_TVC', type: 'folder' }
       ],
       'orosaiwa_tvc': []
     },
     'ped': {
       'root': [
-        { id: 'post', name: 'POST', type: 'folder' }
+        { id: 'post', name: '01_POST', type: 'folder' }
       ],
       'post': []
     }
@@ -108,7 +108,7 @@ export default function FinderWindow({
     } else if (folderId === '7days') {
       if (item.id === 'abbiamo_vinto') {
         if (onOpenFile) {
-          onOpenFile({ type: 'image-viewer', collection: '7days', title: 'ABBIAMO VINTOOO', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/06:11:25.jpg' });
+          onOpenFile({ type: 'image-viewer', collection: '7days', title: 'ABBIAMO VINTO', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/06:11:25.jpg' });
         }
       } else if (item.id === 'film') {
         if (onOpenFile) {
@@ -116,7 +116,7 @@ export default function FinderWindow({
         }
       } else if (item.id === 'articoli') {
         if (onOpenFile) {
-          onOpenFile({ type: 'image-viewer', collection: 'articoli', title: 'ARTICOLI', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Screenshot 2026-09-09 alle 21.54.57.png' });
+          onOpenFile({ type: 'image-viewer', collection: 'articoli', title: '02_ARTICOLI', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/Screenshot 2026-09-09 alle 21.54.57.png' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -146,7 +146,7 @@ export default function FinderWindow({
     } else if (folderId === 'ped') {
       if (item.id === 'post') {
         if (onOpenFile) {
-          onOpenFile({ type: 'image-viewer', collection: 'ped', title: 'POST', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/WD_PL_1.png' });
+          onOpenFile({ type: 'image-viewer', collection: 'ped', title: '01_POST', src: import.meta.env.BASE_URL + 'FOTO PORTFOLIO/WD_PL_1.png' });
         }
       } else if (item.type === 'folder') {
         setCurrentPath(prev => [...prev, item.id]);
@@ -330,7 +330,7 @@ export default function FinderWindow({
         {/* Main Content Area */}
         <div className="finder-main-area">
           <div className="finder-content-grid">
-            {items.map(item => (
+            {[...items].sort((a, b) => a.name.localeCompare(b.name)).map(item => (
               <div 
                 key={item.id} 
                 className="finder-folder-item" 

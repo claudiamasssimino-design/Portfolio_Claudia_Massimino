@@ -13,7 +13,7 @@ const DOCK_ITEMS = [
   { id: 'photoshop',    label: 'Photoshop',     quip: 'Esporta come "02_final_finalissimo_ok"',                         icon: import.meta.env.BASE_URL + 'icons/photoshop.png' },
   { id: 'illustrator',  label: 'Illustrator',   quip: '247 livelli ma si chiamano tutti “Livello 1”',       icon: import.meta.env.BASE_URL + 'icons/illustrator.png' },
   { id: 'teams',        label: 'Teams',         quip: '«Hai un minuto?» Spoiler: no, ma OVVIO',          icon: import.meta.env.BASE_URL + 'icons/teams.png' },
-  { id: 'outlook',      label: 'Outlook',       quip: 'Zero mail non lette. O quasi.',                          icon: import.meta.env.BASE_URL + 'icons/outlook.png', action: () => window.location.href = 'mailto:claudiamasssimino@gmail.com?subject=Contatto dal Portfolio' },
+  { id: 'outlook',      label: 'Outlook',       quip: 'Zero mail non lette. O quasi.',                          icon: import.meta.env.BASE_URL + 'icons/outlook.png' },
 ];
 
 const TRASH_ITEM = {

@@ -45,7 +45,7 @@ export default function ImageViewer({
   const hasMultipleImages = images.length > 1;
   const [currentSrc, setCurrentSrc] = useState(initialSrc || images[0].src);
   
-  // Initial size: for pastelli, 810x567 (reduced by 10%) or custom dimensions
+  // Initial size: for pastelli, 810x567 (landscape orientation) or custom dimensions
   const defaultW = initialWidth || (collection === 'pastelli' ? 810 : 900);
   const defaultH = initialHeight || (collection === 'pastelli' ? 567 : 600);
   const [windowSize, setWindowSize] = useState({ width: defaultW, height: defaultH });
@@ -194,6 +194,11 @@ export default function ImageViewer({
             src={currentSrc}
             alt={currentImageName}
             draggable="false"
+            style={collection === 'pastelli' ? { 
+              transform: 'rotate(-90deg)',
+              width: `${windowSize.height - 38}px`,
+              height: `${windowSize.width}px`
+            } : {}}
           />
         </div>
       </div>
