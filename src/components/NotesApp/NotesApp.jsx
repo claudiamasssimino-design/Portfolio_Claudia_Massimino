@@ -83,31 +83,15 @@ export default function NotesApp({ onClose, initialX = 100, initialY = 80 }) {
 
       {/* List section */}
       <div className="notes-toolbar__section notes-toolbar__list">
-        <div className="notes-btn-group">
-          <button className="notes-btn active"><svg width="14" height="12" viewBox="0 0 14 12" fill="currentColor"><path d="M2 3a1 1 0 11-2 0 1 1 0 012 0zm12 0H5v-1h9v1zM2 7a1 1 0 11-2 0 1 1 0 012 0zm12 0H5v-1h9v1zm-12 4a1 1 0 11-2 0 1 1 0 012 0zm12 0H5v-1h9v1z"/></svg></button>
-          <button className="notes-btn"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="1" width="5" height="5" rx="1"/><rect x="8" y="1" width="5" height="5" rx="1"/><rect x="1" y="8" width="5" height="5" rx="1"/><rect x="8" y="8" width="5" height="5" rx="1"/></svg></button>
-        </div>
-        <button className="notes-btn" onClick={handleDeleteNote} title="Elimina"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 4h12M4 4V2a1 1 0 011-1h4a1 1 0 011 1v2M2.5 4v10a1 1 0 001 1h7a1 1 0 001-1V4"/></svg></button>
       </div>
 
       {/* Editor section */}
       <div className="notes-toolbar__section notes-toolbar__editor">
+        <div className="notes-toolbar__spacer" />
         <button className="notes-btn" onClick={handleAddNote} title="Nuova nota">
           <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M11.5 1.5l3 3-9 9H2.5v-3l9-9z"/></svg>
         </button>
-        <button className="notes-btn">Aa</button>
-        <button className="notes-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="4" cy="4" r="2"/><path d="M8 4h7M8 12h7"/><circle cx="4" cy="12" r="2"/></svg></button>
-        <button className="notes-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="2" y="2" width="12" height="12" rx="1"/><path d="M2 6h12M6 2v12"/></svg></button>
-        <button className="notes-btn"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M7 1v14M3 5v6M11 5v6"/></svg></button>
-        <button className="notes-btn"><svg width="16" height="14" viewBox="0 0 16 14" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1" y="1" width="14" height="12" rx="2"/><circle cx="5" cy="5" r="1.5"/><path d="M1 10l5-5 9 9"/></svg></button>
-        
-        <div className="notes-toolbar__spacer" />
-        
-        <button className="notes-btn"><svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="1.5"><circle cx="7" cy="7" r="5"/><path d="M10.5 10.5L15 15"/></svg></button>
-        <div className="notes-search">
-          <svg className="notes-search-icon" width="12" height="12" viewBox="0 0 16 16" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="6" cy="6" r="5"/><path d="M9.5 9.5L14 14"/></svg>
-          <input type="text" placeholder="Cerca" className="notes-search-input" />
-        </div>
+        <button className="notes-btn" onClick={handleDeleteNote} title="Elimina"><svg width="14" height="16" viewBox="0 0 14 16" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 4h12M4 4V2a1 1 0 011-1h4a1 1 0 011 1v2M2.5 4v10a1 1 0 001 1h7a1 1 0 001-1V4"/></svg></button>
       </div>
     </div>
   );

@@ -11,26 +11,28 @@
   background: #f6f6f6;
   border-bottom: 1px solid #e0e0e0;
   padding: 0 12px;
+  gap: 16px; /* Gap halved as requested */
   user-select: none;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
-  position: relative;
 }
 
 .info-traffic-lights {
-  position: absolute;
-  left: 12px;
+  display: flex;
+  align-items: center;
 }
 
 .info-titlebar__center {
   display: flex;
   align-items: center;
-  justify-content: center;
-  width: 100%;
+  justify-content: flex-start;
+  flex: 1;
   font-weight: 600;
   color: #333;
   font-size: 13px;
-  gap: 6px;
   pointer-events: none;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .info-titlebar__icon {

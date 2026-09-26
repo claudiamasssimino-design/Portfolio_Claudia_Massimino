@@ -17,9 +17,6 @@ export default function CalendarApp({ onClose, initialX = 150, initialY = 100 })
             <svg width="6" height="6" viewBox="0 0 8 8"><path d="M1 7V2.5C1 1.67 1.67 1 2.5 1H7" stroke="rgba(0,0,0,0.4)" strokeWidth="1.2" strokeLinecap="round"/><path d="M7 1v4.5c0 .83-.67 1.5-1.5 1.5H1" stroke="rgba(0,0,0,0.4)" strokeWidth="1.2" strokeLinecap="round"/></svg>
           </button>
         </div>
-        <button className="calendar-icon-btn"><svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" strokeWidth="1.5"><rect x="1.5" y="2.5" width="11" height="10" rx="1.5"/><path d="M4 1v3M10 1v3M1.5 6.5h11"/></svg></button>
-        <button className="calendar-icon-btn"><svg width="14" height="12" viewBox="0 0 14 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M1 1h12L7 7 1 1zM1 11h12V1H1v10z"/></svg></button>
-        <button className="calendar-icon-btn"><svg width="12" height="12" viewBox="0 0 12 12" fill="none" stroke="currentColor" strokeWidth="1.5"><path d="M6 1v10M1 6h10"/></svg></button>
       </div>
 
       <div className="calendar-toolbar__center">
@@ -55,11 +52,7 @@ export default function CalendarApp({ onClose, initialX = 150, initialY = 100 })
         {/* Header */}
         <div className="calendar-header">
           <h2 className="calendar-title">Ottobre <span>2026</span></h2>
-          <div className="calendar-nav">
-            <button className="calendar-nav-btn">&lt;</button>
-            <button className="calendar-nav-btn today">Oggi</button>
-            <button className="calendar-nav-btn">&gt;</button>
-          </div>
+
         </div>
 
         {/* Days of week */}

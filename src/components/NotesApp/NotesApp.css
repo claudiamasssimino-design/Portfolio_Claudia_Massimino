@@ -24,18 +24,17 @@
   width: 220px;
   min-width: 220px;
   justify-content: space-between;
+  border-right: 1px solid #e1e1e1;
 }
 
 .notes-toolbar__list {
   width: 280px;
   min-width: 280px;
-  border-left: 1px solid #e1e1e1;
-  justify-content: space-between;
+  border-right: 1px solid #e1e1e1;
 }
 
 .notes-toolbar__editor {
   flex: 1;
-  border-left: 1px solid #e1e1e1;
   gap: 12px;
 }
 
@@ -121,6 +120,7 @@
   border-right: 1px solid #e1e1e1;
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
 }
 
 .notes-sidebar__section {
@@ -192,6 +192,7 @@
   border-right: 1px solid #e1e1e1;
   background: #fff;
   overflow-y: auto;
+  box-sizing: border-box;
 }
 
 .notes-list-item {
