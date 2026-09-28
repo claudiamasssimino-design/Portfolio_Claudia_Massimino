@@ -31,3 +31,12 @@ Session Summary (2026-09-23)
 - Uniformed the default "Prima di Photoshop usavo i pastelli.png" window with other image viewers using `ImageViewer`.
 - Disabled hover sidebar in `ImageViewer` when viewing a single image collection.
 - Sized the "Prima di Photoshop" window to 810x567px (reduced by 10% from 900x630px).
+Session Summary (2026-09-25)
+- Rewrote `FinderWindow` CSS and JSX to perfectly match the Figma layout and layer styling, while fixing blend-mode bugs that caused darkening of the glass effects.
+- Added `cursor: pointer` to all interactive elements (sidebar items, folders, toolbar buttons) in the Finder.
+- Updated the `InfoPanel` to increase gap between traffic lights and the title for a cleaner look.
+- Modified `CalendarApp` to remove excess header icons and the "Oggi" navigation bar.
+- Cleaned up the `NotesApp` toolbar by removing unnecessary formatting/view icons and fixing alignment of the vertical pane dividers perfectly.
+
+Session Summary (2026-09-28)
+- Added `image-orientation: none;` and `transform: rotate(-90deg);` to `.desktop-icon--image-thumb` in `DesktopIcon.css` to fix EXIF rotation inconsistencies across Chrome and Safari, ensuring the image preview is perfectly straight everywhere just like in the ImageViewer.
