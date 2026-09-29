@@ -40,3 +40,7 @@ Session Summary (2026-09-25)
 
 Session Summary (2026-09-28)
 - Added `image-orientation: none;` and `transform: rotate(-90deg);` to `.desktop-icon--image-thumb` in `DesktopIcon.css` to fix EXIF rotation inconsistencies across Chrome and Safari, ensuring the image preview is perfectly straight everywhere just like in the ImageViewer.
+
+Session Summary (2026-09-29)
+- Added single-click functionality to the dock icons by handling the `onClick` event in `Dock.jsx`.
+- Set the Spotify app icon in the dock to open a specific Spotify playlist link in a new tab when clicked.
