@@ -44,3 +44,4 @@ Session Summary (2026-09-28)
 Session Summary (2026-09-29)
 - Added single-click functionality to the dock icons by handling the `onClick` event in `Dock.jsx`.
 - Set the Spotify app icon in the dock to open a specific Spotify playlist link in a new tab when clicked.
+- Changed the tooltip (quip) text for the Spotify dock icon to "Ascolta, non parte Sal Da Vinci".
