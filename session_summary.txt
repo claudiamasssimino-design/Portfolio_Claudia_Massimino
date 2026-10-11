@@ -69,3 +69,4 @@ Session Summary (2026-10-10)
 - Added the provided description for the McCrunchy Chicken Strips campaign to the `02_STRIPS - TUTTO PER IL DIP` InfoPanel.
 - Moved the `05_SOCIAL` folder inside `01_CRISPY REVOLUTION` and renamed it to `03_SOCIAL`, removing its dedicated InfoPanel.
 - Fixed InfoPanel behavior in McDonald's so that entering nested subfolders (like `03_SOCIAL`) keeps the parent folder's InfoPanel (e.g. `01_CRISPY REVOLUTION`) open and active until the user navigates back to the root.
+- Resolved GitHub push failure caused by oversized payload (>113 MB) and committed build artifacts in `dist/`. Created `.gitignore` ignoring `dist/` and `.DS_Store`, untracked `dist/`, configured git HTTP buffer, and pushed commits in batches. The remote repository and GitHub Actions are now completely up to date.
