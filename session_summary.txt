@@ -45,3 +45,27 @@ Session Summary (2026-09-29)
 - Added single-click functionality to the dock icons by handling the `onClick` event in `Dock.jsx`.
 - Set the Spotify app icon in the dock to open a specific Spotify playlist link in a new tab when clicked.
 - Changed the tooltip (quip) text for the Spotify dock icon to "Ascolta, non parte Sal Da Vinci".
+
+Session Summary (2026-10-09)
+- Fixed an issue in both `QuickTimePlayer` and `ImageViewer` components where clicking on vertical videos failed to pause them. This occurred because vertical videos trigger a smaller window width, causing the sidebar to cover the center of the video and silently intercept click events. 
+- Implemented a robust fix by adding a layout-wide `onClick={togglePlay}` handler and utilizing `e.stopPropagation()` on interactive child components (`.qt-sidebar-item`, `.iv-sidebar-item` and `.qt-controls-panel`). This ensures that clicking any non-interactive empty space (including the blurred sidebar background over the video) reliably toggles video playback.
+
+Session Summary (2026-10-10)
+- Fixed video playback interaction in `ImageViewer`, resolving issue with spacebar pause/resume and scrubber interaction.
+- Established `.agents/rules/media-viewers-protected.md` to protect video and photo viewer architectures from unintended modifications.
+- Renamed `Sanremo_1.png` to `LA SETTIMANA PERFETTA.png` and moved it from the desktop master `PED` folder to `McDonald's/04_PED/02_SANREMO/TEASER/` across the filesystem, `FinderWindow`, and `ImageViewer`.
+- Removed the `PED` folder icon from the desktop UI (`DesktopPage`) and cleaned up its configurations in `FinderWindow`, `ImageViewer`, and `InfoPanel`, without modifying the physical image assets.
+- Refactored `DesktopPage` and `FinderWindow` to track active folder paths within Finder, enabling conditional rendering of `InfoPanel`s for specific subfolders.
+- Updated `InfoPanel` for the McDonald's folder to display specific information for its 5 main subfolders rather than a general panel for the root folder, incorporating the existing Crispy Revelation description and placeholders for the others.
+- Implemented automatic toggling of the Info Panel: when the user double-clicks to open a McDonald's subfolder, its corresponding Info Panel automatically opens; when the user navigates back to the root McDonald's folder, the Info Panel automatically closes. The root McDonald's folder does not open an Info Panel by default anymore.
+- Fixed UI rendering issues in the Info Panel for folders with empty descriptions by conditionally hiding the empty description box and enforcing 100% width on the content container to eliminate background grey bands on the sides.
+- Created and integrated a new `MapsApp` component mimicking a macOS Maps interface. Placed a `Mappe` icon on the desktop that, when double-clicked, opens this app displaying the `Afragola.png` image with a side information panel about the location.
+- Fixed layout issues in MapsApp (removed grey bands above and below content), removed unnecessary "Indicazioni" buttons, and made the top-left sidebar toggle button fully functional.
+- Updated MapsApp layout so the side panel overlaps the map without resizing or cropping the map image, and updated the descriptive text to include detailed demographics and coordinates for Afragola.
+- Adjusted the initial width and height of the MapsApp window to perfectly match the aspect ratio of the newly uploaded Afragola map image (which is now landscape format), ensuring no grey bands or cropping occurs.
+- Reduced MapsApp window size by 20% while retaining the image's full physical dimensions (1.25x scale), enabling standard map panning interactions constrained tightly to the image's bounds without exposing the container background.
+- Restored the old desktop `PED` description and assigned it to the `04_PED` subfolder in the `McDonald's` directory.
+- Added the provided description for the Grinch campaign to the `03_WINTERDAYS_SOCIAL` InfoPanel.
+- Added the provided description for the McCrunchy Chicken Strips campaign to the `02_STRIPS - TUTTO PER IL DIP` InfoPanel.
+- Moved the `05_SOCIAL` folder inside `01_CRISPY REVOLUTION` and renamed it to `03_SOCIAL`, removing its dedicated InfoPanel.
+- Fixed InfoPanel behavior in McDonald's so that entering nested subfolders (like `03_SOCIAL`) keeps the parent folder's InfoPanel (e.g. `01_CRISPY REVOLUTION`) open and active until the user navigates back to the root.

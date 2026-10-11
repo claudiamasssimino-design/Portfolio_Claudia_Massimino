@@ -1,0 +1,198 @@
+    'mcdonalds': {
+      'mcdonalds_02_strips_tutto_per_il_dip_01_tvc': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_01_tvc_nuove_mccrunchy_chicken_strips_tutto_per_il_dip_mp4', name: `Nuove McCrunchy™ Chicken Strips - Tutto per il dip.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/01_TVC/Nuove McCrunchy™ Chicken Strips - Tutto per il dip.mp4` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_02_teaser': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser_png', name: `???.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/???.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser_che_succede_mp4', name: `Che succede????.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/Che succede????.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser_gazzoli_reel_mp4', name: `Gazzoli_reel.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/Gazzoli_reel.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser_prelancio_mp4', name: `PRELANCIO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/PRELANCIO.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser_qualcuno_ha_indizi_mp4', name: `QUALCUNO HA INDIZI?!?!?.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/QUALCUNO HA INDIZI?!?!?.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser_stay_tuned_mp4', name: `STAY TUNED.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/STAY TUNED.mp4` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_carousel_ig': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_carousel_ig_1_png', name: `1.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/CAROUSEL IG/1.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_carousel_ig_2_png', name: `2.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/CAROUSEL IG/2.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_carousel_ig_3_png', name: `3.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/CAROUSEL IG/3.png` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_fb': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_fb_card_png', name: `CARD.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/FB/CARD.png` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_reel': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_reel_professionisti_del_dip_mp4', name: `PROFESSIONISTI DEL DIP.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/REEL/PROFESSIONISTI DEL DIP.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_reel_prova_a_non_dippare_mp4', name: `PROVA A NON DIPPARE.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/REEL/PROVA A NON DIPPARE.mp4` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_03_lancio': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_carousel_ig', name: `CAROUSEL IG`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_fb', name: `FB`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio_reel', name: `REEL`, type: 'folder' },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_04_filtro_tiktok': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_04_filtro_tiktok_dippa_la_strips_tt_mp4', name: `DIPPA LA STRIPS_TT.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/04_FILTRO TIKTOK/DIPPA LA STRIPS_TT.mp4` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_1_png', name: `1.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/1.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_2_png', name: `2.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/2.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_3_png', name: `3.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/3.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_4_png', name: `4.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/4.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_5_png', name: `5.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/5.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_6_png', name: `6.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/6.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_7_png', name: `7.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/7.png` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_8_png', name: `8.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/8.png` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_dip_era_mp4', name: `DIP ERA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIP ERA.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_dippando_mp4', name: `DIPPANDO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPANDO.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_dippiamo_mp4', name: `DIPPIAMO?.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPIAMO?.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_gatto_che_dippa_mp4', name: `GATTO CHE DIPPA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/GATTO CHE DIPPA.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_guess_what_mp4', name: `GUESS WHAT.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/GUESS WHAT.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_libro_mp4', name: `LIBRO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/LIBRO.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_top_amo_mp4', name: `TOP AMO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/TOP AMO.mp4` },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker_mp4', name: `🤌🏻.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/🤌🏻.mp4` },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_carousel_ig', name: `CAROUSEL IG`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra_sticker', name: `STICKER`, type: 'folder' },
+      ],
+      'mcdonalds_02_strips_tutto_per_il_dip': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_01_tvc', name: `01_TVC`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_02_teaser', name: `02_TEASER`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_03_lancio', name: `03_LANCIO`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_04_filtro_tiktok', name: `04_FILTRO TIKTOK`, type: 'folder' },
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip_05_contenuti_social_extra', name: `05_CONTENUTI SOCIAL EXTRA`, type: 'folder' },
+      ],
+      'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig': [
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig_1_png', name: `1.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/CAROUSEL IG/1.png` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig_2_png', name: `2.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/CAROUSEL IG/2.png` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig_3_png', name: `3.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/CAROUSEL IG/3.png` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig_4_png', name: `4.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/CAROUSEL IG/4.png` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig_5_png', name: `5.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/CAROUSEL IG/5.png` },
+      ],
+      'mcdonalds_03_winterdays_social_01_post_engagemet_stories_carte': [
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_carte_quale_carta_scegli_mp4', name: `QUALE CARTA SCEGLI?.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_CARTE/QUALE CARTA SCEGLI?.mp4` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_carte_risultato_png', name: `RISULTATO.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_CARTE/RISULTATO.png` },
+      ],
+      'mcdonalds_03_winterdays_social_01_post_engagemet_stories_luce': [
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_luce_1_png', name: `1.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_LUCE/1.png` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_luce_2_png', name: `2.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_LUCE/2.png` },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_luce_3_png', name: `3.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_LUCE/3.png` },
+      ],
+      'mcdonalds_03_winterdays_social_01_post_engagemet': [
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_carousel_ig', name: `CAROUSEL IG`, type: 'folder' },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_carte', name: `STORIES_CARTE`, type: 'folder' },
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet_stories_luce', name: `STORIES_LUCE`, type: 'folder' },
+      ],
+      'mcdonalds_03_winterdays_social_02_post_love': [
+      ],
+      'mcdonalds_03_winterdays_social': [
+        { id: 'mcdonalds_03_winterdays_social_01_post_engagemet', name: `01_POST ENGAGEMET`, type: 'folder' },
+        { id: 'mcdonalds_03_winterdays_social_02_post_love', name: `02_POST LOVE`, type: 'folder' },
+      ],
+      'mcdonalds_04_ped_01_social_media_day': [
+        { id: 'mcdonalds_04_ped_01_social_media_day_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/01_SOCIAL MEDIA DAY/1.jpg` },
+        { id: 'mcdonalds_04_ped_01_social_media_day_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/01_SOCIAL MEDIA DAY/2.jpg` },
+        { id: 'mcdonalds_04_ped_01_social_media_day_3_jpg', name: `3.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/01_SOCIAL MEDIA DAY/3.jpg` },
+        { id: 'mcdonalds_04_ped_01_social_media_day_4_jpg', name: `4.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/01_SOCIAL MEDIA DAY/4.jpg` },
+      ],
+      'mcdonalds_04_ped_02_sanremo_cose_da_fare': [
+      ],
+      'mcdonalds_04_ped_02_sanremo_fastidio': [
+        { id: 'mcdonalds_04_ped_02_sanremo_fastidio_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/02_SANREMO/FASTIDIO/1.jpg` },
+        { id: 'mcdonalds_04_ped_02_sanremo_fastidio_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/02_SANREMO/FASTIDIO/2.jpg` },
+        { id: 'mcdonalds_04_ped_02_sanremo_fastidio_3_jpg', name: `3.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/02_SANREMO/FASTIDIO/3.jpg` },
+      ],
+      'mcdonalds_04_ped_02_sanremo_teaser': [
+      ],
+      'mcdonalds_04_ped_02_sanremo': [
+        { id: 'mcdonalds_04_ped_02_sanremo_cose_da_fare', name: `COSE DA FARE`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_02_sanremo_fastidio', name: `FASTIDIO`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_02_sanremo_teaser', name: `TEASER`, type: 'folder' },
+      ],
+      'mcdonalds_04_ped_03_matcha_carousel_ig': [
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/CAROUSEL IG/1.jpg` },
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/CAROUSEL IG/2.jpg` },
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig_3_jpg', name: `3 .jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/CAROUSEL IG/3 .jpg` },
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig_4_jpg', name: `4.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/CAROUSEL IG/4.jpg` },
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig_5_jpg', name: `5.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/CAROUSEL IG/5.jpg` },
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig_6_jpg', name: `6.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/CAROUSEL IG/6.jpg` },
+      ],
+      'mcdonalds_04_ped_03_matcha_tiktok': [
+        { id: 'mcdonalds_04_ped_03_matcha_tiktok_il_suono_del_matcha_mp4', name: `IL SUONO DEL MATCHA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/TIKTOK/IL SUONO DEL MATCHA.mp4` },
+      ],
+      'mcdonalds_04_ped_03_matcha': [
+        { id: 'mcdonalds_04_ped_03_matcha_carousel_ig', name: `CAROUSEL IG`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_03_matcha_tiktok', name: `TIKTOK`, type: 'folder' },
+      ],
+      'mcdonalds_04_ped_04_trend_messaggi': [
+        { id: 'mcdonalds_04_ped_04_trend_messaggi_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/MESSAGGI/1.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_messaggi_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/MESSAGGI/2.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_messaggi_3_jpg', name: `3.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/MESSAGGI/3.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_messaggi_4_jpg', name: `4.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/MESSAGGI/4.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_messaggi_5_jpg', name: `5.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/MESSAGGI/5.jpg` },
+      ],
+      'mcdonalds_04_ped_04_trend_scegli_il_posto': [
+        { id: 'mcdonalds_04_ped_04_trend_scegli_il_posto_dove_ti_siedi_jpg', name: `DOVE TI SIEDI?.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/SCEGLI IL POSTO/DOVE TI SIEDI?.jpg` },
+      ],
+      'mcdonalds_04_ped_04_trend_six_seven': [
+        { id: 'mcdonalds_04_ped_04_trend_six_seven_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/SIX SEVEN/1.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_six_seven_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/SIX SEVEN/2.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_six_seven_3_jpg', name: `3.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/SIX SEVEN/3.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_six_seven_4_jpg', name: `4.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/SIX SEVEN/4.jpg` },
+      ],
+      'mcdonalds_04_ped_04_trend_un_10_ma': [
+        { id: 'mcdonalds_04_ped_04_trend_un_10_ma_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/UN 10 MA.../1.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_un_10_ma_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/UN 10 MA.../2.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_un_10_ma_3_jpg', name: `3.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/UN 10 MA.../3.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_un_10_ma_4_jpg', name: `4.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/UN 10 MA.../4.jpg` },
+        { id: 'mcdonalds_04_ped_04_trend_un_10_ma_5_jpg', name: `5.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/04_TREND/UN 10 MA.../5.jpg` },
+      ],
+      'mcdonalds_04_ped_04_trend': [
+        { id: 'mcdonalds_04_ped_04_trend_messaggi', name: `MESSAGGI`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_04_trend_scegli_il_posto', name: `SCEGLI IL POSTO`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_04_trend_six_seven', name: `SIX SEVEN`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_04_trend_un_10_ma', name: `UN 10 MA...`, type: 'folder' },
+      ],
+      'mcdonalds_04_ped': [
+        { id: 'mcdonalds_04_ped_01_social_media_day', name: `01_SOCIAL MEDIA DAY`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_02_sanremo', name: `02_SANREMO`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_03_matcha', name: `03_MATCHA`, type: 'folder' },
+        { id: 'mcdonalds_04_ped_04_trend', name: `04_TREND`, type: 'folder' },
+      ],
+      'mcdonalds_05_social_01_teaser': [
+        { id: 'mcdonalds_05_social_01_teaser_mi_dica_cosa_vede_jpg', name: `MI DICA COSA VEDE.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/01_TEASER/MI DICA COSA VEDE.jpg` },
+        { id: 'mcdonalds_05_social_01_teaser_pronti_a_scoprirlo_reel_mp4', name: `PRONTI A SCOPRIRLO_REEL.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/01_TEASER/PRONTI A SCOPRIRLO_REEL.mp4` },
+      ],
+      'mcdonalds_05_social_02_lancio_carousel_ig': [
+        { id: 'mcdonalds_05_social_02_lancio_carousel_ig_1_jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/02_LANCIO/CAROUSEL IG/1.jpg` },
+        { id: 'mcdonalds_05_social_02_lancio_carousel_ig_2_jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/02_LANCIO/CAROUSEL IG/2.jpg` },
+        { id: 'mcdonalds_05_social_02_lancio_carousel_ig_3_jpg', name: `3.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/02_LANCIO/CAROUSEL IG/3.jpg` },
+        { id: 'mcdonalds_05_social_02_lancio_carousel_ig_4_jpg', name: `4.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/02_LANCIO/CAROUSEL IG/4.jpg` },
+      ],
+      'mcdonalds_05_social_02_lancio_extra': [
+        { id: 'mcdonalds_05_social_02_lancio_extra_io_quando_jpg', name: `IO QUANDO.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/02_LANCIO/EXTRA/IO QUANDO.jpg` },
+        { id: 'mcdonalds_05_social_02_lancio_extra_tutte_le_strade_portano_al_crispy_jpg', name: `TUTTE LE STRADE PORTANO AL CRISPY.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/02_LANCIO/EXTRA/TUTTE LE STRADE PORTANO AL CRISPY.jpg` },
+      ],
+      'mcdonalds_05_social_02_lancio': [
+        { id: 'mcdonalds_05_social_02_lancio_carousel_ig', name: `CAROUSEL IG`, type: 'folder' },
+        { id: 'mcdonalds_05_social_02_lancio_extra', name: `EXTRA`, type: 'folder' },
+      ],
+      'mcdonalds_05_social_03_tiktok': [
+        { id: 'mcdonalds_05_social_03_tiktok_allenandomi_per_il_crispy_mp4', name: `ALLENANDOMI PER IL CRISPY.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/ALLENANDOMI PER IL CRISPY.mp4` },
+        { id: 'mcdonalds_05_social_03_tiktok_il_crispy_di_post_serata_mp4', name: `IL CRISPY DI POST SERATA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/IL CRISPY DI POST SERATA.mp4` },
+        { id: 'mcdonalds_05_social_03_tiktok_il_pensatore_mp4', name: `IL PENSATORE.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/IL PENSATORE.mp4` },
+        { id: 'mcdonalds_05_social_03_tiktok_il_segno_del_crispy_mp4', name: `IL SEGNO DEL CRISPY.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/IL SEGNO DEL CRISPY.mp4` },
+      ],
+      'mcdonalds_05_social': [
+        { id: 'mcdonalds_05_social_01_teaser', name: `01_TEASER`, type: 'folder' },
+        { id: 'mcdonalds_05_social_02_lancio', name: `02_LANCIO`, type: 'folder' },
+        { id: 'mcdonalds_05_social_03_tiktok', name: `03_TIKTOK`, type: 'folder' },
+      ],
+      'mcdonalds': [
+        { id: 'mcdonalds_02_strips_tutto_per_il_dip', name: `02_STRIPS - TUTTO PER IL DIP`, type: 'folder' },
+        { id: 'mcdonalds_03_winterdays_social', name: `03_WINTERDAYS_SOCIAL`, type: 'folder' },
+        { id: 'mcdonalds_04_ped', name: `04_PED`, type: 'folder' },
+        { id: 'mcdonalds_05_social', name: `05_SOCIAL`, type: 'folder' },
+      ],
+      'tvc': [],
+      'ooh': [],
+    },

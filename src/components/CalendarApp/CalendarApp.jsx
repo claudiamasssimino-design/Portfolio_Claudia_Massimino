@@ -129,7 +129,6 @@ export default function CalendarApp({ onClose, initialX = 150, initialY = 100 })
           <div className="calendar-cell inactive">8</div>
 
           {/* Floating Images */}
-          <img src={import.meta.env.BASE_URL + 'calendario_images/STRIPS.png'} alt="Strips" className="calendar-floating-img img-1" draggable="false" />
           <img src={import.meta.env.BASE_URL + 'calendario_images/CHEAT DAY.png'} alt="Cheat Day" className="calendar-floating-img img-2" draggable="false" />
           <img src={import.meta.env.BASE_URL + 'calendario_images/HALLOWEEN.png'} alt="Halloween" className="calendar-floating-img img-3" draggable="false" />
 

@@ -28,11 +28,31 @@ export default function InfoPanel({
 
   // Content configuration based on folder
   const contentMap = {
-    'crispy': {
+    'crispy_revelation': {
+      title: '01_CRISPY REVELATION',
       size: '4,1 MB',
       modified: 'Lunedì 2 marzo 2026 alle ore 18:54',
       description: "Crispy Revelation nasce da un'idea semplice: il Crispy McBacon® è ormai così iconico che basta un piccolo segnale per farlo venire subito in mente. La campagna racconta proprio quei momenti in cui il pensiero del Crispy compare all'improvviso, ovunque e in qualsiasi situazione."
     },
+    'mcd_02_strips___tutto_per_il_dip': {
+      title: '02_STRIPS - TUTTO PER IL DIP',
+      size: '--',
+      modified: '--',
+      description: "Per il lancio delle nuove McCrunchy™ Chicken Strips, McDonald’s trasforma uno dei gesti più iconici della cultura italiana in un nuovo modo di comunicare: il gesto del dip. Capovolgendo il celebre gesto del “ma che vuoi?”, nasce una campagna pop e ironica che celebra la passione per le salse. Un’idea che prende vita attraverso film, OOH, social e attivazioni digitali, trasformando un semplice gesto quotidiano in un linguaggio universale."
+    },
+    'mcd_03_winterdays_social': {
+      title: '03_WINTERDAYS_SOCIAL',
+      size: '--',
+      modified: '--',
+      description: "Per i WinterDays 2025 di McDonald’s, il Grinch diventa protagonista della comunicazione del brand, portando tutta la sua ironia e il suo spirito dispettoso nella campagna. Anche sui social, abbiamo dato vita alla sua personalità attraverso contenuti che giocano con le espressioni iconiche del personaggio, i suoi piccoli dispetti e la sua voglia di rovinare la festa. Dai post che celebrano il suo arrivo nel mondo McDonald’s a quelli più ironici e provocatori, pensati per stimolare commenti e conversazioni, trasformando il suo lato più irriverente in un’occasione di interazione con la community."
+    },
+    'mcd_04_ped': {
+      title: '04_PED',
+      size: '--',
+      modified: '--',
+      description: "Ho lavorato al PED di McDonald’s Italia, ideando e realizzando contenuti social legati a lanci di prodotto, ricorrenze e momenti di attualità. Un racconto always-on che interpreta trend, meme e conversazioni della community attraverso il tono ironico, immediato e riconoscibile del brand."
+    },
+
     '7days': {
       size: '3,8 MB',
       modified: 'Lunedì 2 marzo 2026 alle ore 19:15',
@@ -47,11 +67,6 @@ export default function InfoPanel({
       size: '2,9 MB',
       modified: 'Lunedì 2 marzo 2026 alle ore 19:45',
       description: "La campagna racconta la colazione italiana partendo da un insight semplice: tutti vogliono suggerire il modo giusto di farla, ma ognuno ha le proprie abitudini. Attraverso la campagna TV, Oro Saiwa si posiziona come il biscotto versatile che si adatta alla colazione di tutti, utilizzando i balloon per dare voce al prodotto e accompagnare i diversi momenti quotidiani."
-    },
-    'ped': {
-      size: '8,5 MB',
-      modified: 'Lunedì 2 marzo 2026 alle ore 20:00',
-      description: "Ho lavorato al PED di McDonald’s Italia, ideando e realizzando contenuti social legati a lanci di prodotto, ricorrenze e momenti di attualità. Un racconto always-on che interpreta trend, meme e conversazioni della community attraverso il tono ironico, immediato e riconoscibile del brand."
     }
   };
 
@@ -60,6 +75,8 @@ export default function InfoPanel({
     modified: '--',
     description: "Nessuna informazione aggiuntiva disponibile per questa cartella."
   };
+  
+  const displayTitle = content.title || folderName;
 
   const customTitlebar = ({ handleClose, handleMinimize, handleMaximize }) => (
     <div className="info-titlebar">
@@ -75,7 +92,7 @@ export default function InfoPanel({
         </button>
       </div>
       <div className="info-titlebar__center">
-        <span className="info-titlebar__text">Info su {folderName}</span>
+        <span className="info-titlebar__text">Info su {displayTitle}</span>
       </div>
     </div>
   );
@@ -92,7 +109,7 @@ export default function InfoPanel({
 
   return (
     <Window
-      title={`Info su ${folderName}`}
+      title={`Info su ${displayTitle}`}
       initialX={initialX}
       initialY={initialY}
       width={320}
@@ -105,16 +122,18 @@ export default function InfoPanel({
         <div className="info-header">
           <div className="info-header__details">
             <div className="info-header__top">
-              <h2 className="info-header__title">{folderName}</h2>
+              <h2 className="info-header__title">{displayTitle}</h2>
               <span className="info-header__size">{content.size}</span>
             </div>
             <div className="info-header__modified">Modificato: {content.modified}</div>
           </div>
         </div>
 
-        <div className="info-description-box">
-          {content.description}
-        </div>
+        {content.description && (
+          <div className="info-description-box">
+            {content.description}
+          </div>
+        )}
 
         <div className="info-accordions">
           <AccordionSection id="generali" title="Generali:" />

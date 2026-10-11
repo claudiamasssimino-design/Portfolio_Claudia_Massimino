@@ -18,7 +18,55 @@ const VIDEO_COLLECTIONS = {
   ],
   'orosaiwa': [
     { id: 'o1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/La TUA colazione ogni giorno_2026.mp4', name: 'La TUA colazione ogni giorno_2026' }
-  ]
+  ],
+  'mcd_02_strips___tutto_per_il_dip_01_tvc': [
+    { id: 'mcd_02_strips___tutto_per_il_dip_01_tvc_nuove_mccrunchy_chicken_strips___tutto_per_il_dipmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/01_TVC/Nuove McCrunchy™ Chicken Strips - Tutto per il dip.mp4`, name: `Nuove McCrunchy™ Chicken Strips - Tutto per il dip` },
+  ],
+  'mcd_02_strips___tutto_per_il_dip_02_teaser': [
+    { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_che_succedemp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/Che succede.mp4`, name: `Che succede` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_gazzoli_reelmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/Gazzoli_reel.mp4`, name: `Gazzoli_reel` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_prelanciomp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/PRELANCIO.mp4`, name: `PRELANCIO` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_qualcuno_ha_indizimp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/QUALCUNO HA INDIZI.mp4`, name: `QUALCUNO HA INDIZI` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_stay_tunedmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/STAY TUNED.mp4`, name: `STAY TUNED` },
+  ],
+  'mcd_02_strips___tutto_per_il_dip_03_lancio_reel': [
+    { id: 'mcd_02_strips___tutto_per_il_dip_03_lancio_reel_professionisti_del_dipmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/REEL/PROFESSIONISTI DEL DIP.mp4`, name: `PROFESSIONISTI DEL DIP` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_03_lancio_reel_prova_a_non_dipparemp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/03_LANCIO/REEL/PROVA A NON DIPPARE.mp4`, name: `PROVA A NON DIPPARE` },
+  ],
+  'mcd_02_strips___tutto_per_il_dip_04_filtro_tiktok': [
+    { id: 'mcd_02_strips___tutto_per_il_dip_04_filtro_tiktok_dippa_la_strips_ttmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/04_FILTRO TIKTOK/DIPPA LA STRIPS_TT.mp4`, name: `DIPPA LA STRIPS_TT` },
+  ],
+  'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker': [
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dip_eramp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIP ERA.mp4`, name: `DIP ERA` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dippandomp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPANDO.mp4`, name: `DIPPANDO` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dippiamomp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPIAMO?.mp4`, name: `DIPPIAMO?` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_gatto_che_dippamp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/GATTO CHE DIPPA.mp4`, name: `GATTO CHE DIPPA` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_guess_whatmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/GUESS WHAT.mp4`, name: `GUESS WHAT` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_libromp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/LIBRO.mp4`, name: `LIBRO` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_top_amomp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/TOP AMO.mp4`, name: `TOP AMO` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_mp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/🤌🏻.mp4`, name: `🤌🏻` },
+  ],
+  'mcd_03_winterdays_social_01_post_engagemet_stories_carte': [
+    { id: 'mcd_03_winterdays_social_01_post_engagemet_stories_carte_quale_carta_sceglimp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_CARTE/QUALE CARTA SCEGLI.mp4`, name: `QUALE CARTA SCEGLI` },
+  ],
+  'mcd_04_ped_03_matcha_tiktok': [
+    { id: 'mcd_04_ped_03_matcha_tiktok_il_suono_del_matchamp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/03_MATCHA/TIKTOK/IL SUONO DEL MATCHA.mp4`, name: `IL SUONO DEL MATCHA` },
+  ],
+  'mcd_05_social_01_teaser': [
+    { id: 'mcd_05_social_01_teaser_pronti_a_scoprirlo_reelmp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/01_TEASER/PRONTI A SCOPRIRLO_REEL.mp4`, name: `PRONTI A SCOPRIRLO_REEL` },
+  ],
+  'mcd_05_social_03_tiktok': [
+    { id: 'mcd_05_social_03_tiktok_allenandomi_per_il_crispymp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/ALLENANDOMI PER IL CRISPY.mp4`, name: `ALLENANDOMI PER IL CRISPY` },
+    { id: 'mcd_05_social_03_tiktok_il_crispy_di_post_seratamp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/IL CRISPY DI POST SERATA.mp4`, name: `IL CRISPY DI POST SERATA` },
+    { id: 'mcd_05_social_03_tiktok_il_pensatoremp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/IL PENSATORE.mp4`, name: `IL PENSATORE` },
+    { id: 'mcd_05_social_03_tiktok_il_segno_del_crispymp4', src: import.meta.env.BASE_URL + `NEW/McDonald's/05_SOCIAL/03_TIKTOK/IL SEGNO DEL CRISPY.mp4`, name: `IL SEGNO DEL CRISPY` },
+  ],
+  'mcd_crispy_tvc': [
+    { id: 'v1', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Club.mp4', name: 'McD_Crispy_15sec_Club' },
+    { id: 'v2', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Corsa.mp4', name: 'McD_Crispy_15sec_Corsa' },
+    { id: 'v3', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Famiglia.mp4', name: 'McD_Crispy_15sec_Famiglia' },
+    { id: 'v4', src: import.meta.env.BASE_URL + 'TVC PORTFOLIO/McD_Crispy_15sec_Ufficio.mp4', name: 'McD_Crispy_15sec_Ufficio' },
+  ],
 };
 
 export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onClose }) {
@@ -32,6 +80,40 @@ export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onC
   
   const videoRef = useRef(null);
   const hideControlsTimeout = useRef(null);
+  const [windowSize, setWindowSize] = useState({ width: 1035, height: 635 });
+
+  // Adapt window size to video dimensions
+  const handleVideoMetadata = (e) => {
+    const video = e.target;
+    const vw = video.videoWidth;
+    const vh = video.videoHeight;
+    if (!vw || !vh) return;
+    
+    const aspect = vw / vh;
+    const MAX_W = Math.min(1200, window.innerWidth * 0.85);
+    const MAX_H = Math.min(900, window.innerHeight * 0.85);
+    const MIN_W = 400;
+    const MIN_H = 400;
+    
+    let w = vw;
+    let h = vh + 38;
+    
+    if (w > MAX_W || h > MAX_H) {
+      if (aspect > MAX_W / MAX_H) {
+        w = MAX_W;
+        h = (MAX_W / aspect) + 38;
+      } else {
+        h = MAX_H;
+        w = (MAX_H - 38) * aspect;
+      }
+    }
+    
+    if (w < MIN_W) { w = MIN_W; h = (MIN_W / aspect) + 38; }
+    if (h < MIN_H) { h = MIN_H; w = (MIN_H - 38) * aspect; }
+    
+    setWindowSize({ width: Math.round(w), height: Math.round(h) });
+    setDuration(video.duration);
+  };
 
   const handleMouseMove = () => {
     setShowControls(true);
@@ -53,14 +135,14 @@ export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onC
     }
   }, [currentSrc]);
 
-  const togglePlay = () => {
+  const togglePlay = (e) => {
+    if (e && e.stopPropagation) e.stopPropagation();
     if (videoRef.current) {
-      if (isPlaying) {
-        videoRef.current.pause();
+      if (videoRef.current.paused) {
+        videoRef.current.play().catch(e => console.log(e));
       } else {
-        videoRef.current.play();
+        videoRef.current.pause();
       }
-      setIsPlaying(!isPlaying);
     }
   };
 
@@ -70,11 +152,7 @@ export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onC
     }
   };
 
-  const handleLoadedMetadata = () => {
-    if (videoRef.current) {
-      setDuration(videoRef.current.duration);
-    }
-  };
+
 
   const handleSeek = (e) => {
     const time = Number(e.target.value);
@@ -114,13 +192,13 @@ export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onC
       title={currentVideoName}
       initialX={200}
       initialY={100}
-      width={1035}
-      height={635}
+      width={windowSize.width}
+      height={windowSize.height}
       onClose={onClose}
       customTitlebar={customTitlebar}
       className="qt-window-wrapper"
     >
-      <div className="qt-layout" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave}>
+      <div className="qt-layout" onMouseMove={handleMouseMove} onMouseLeave={handleMouseLeave} onClick={togglePlay}>
         
         {/* Left Sidebar for thumbnails */}
         {hasSidebar && (
@@ -133,7 +211,10 @@ export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onC
                 <div 
                   key={vid.id} 
                   className={`qt-sidebar-item ${currentSrc === vid.src ? 'active' : ''}`}
-                  onClick={() => setCurrentSrc(vid.src)}
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    setCurrentSrc(vid.src);
+                  }}
                 >
                   <video src={`${vid.src}#t=0.1`} className="qt-sidebar-thumb" muted preload="metadata" />
                   <div className="qt-sidebar-label">{vid.name}</div>
@@ -148,16 +229,22 @@ export default function QuickTimePlayer({ initialSrc, collection = 'crispy', onC
           <video 
             ref={videoRef}
             className="qt-video-element"
-            onClick={togglePlay}
             onTimeUpdate={handleTimeUpdate}
-            onLoadedMetadata={handleLoadedMetadata}
+            onLoadedMetadata={handleVideoMetadata}
             onEnded={() => setIsPlaying(false)}
+            onPlay={() => setIsPlaying(true)}
+            onPause={() => setIsPlaying(false)}
             src={currentSrc}
+          />
+          {/* Transparent overlay to guarantee click detection on the video area */}
+          <div 
+            style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, zIndex: 10, cursor: 'pointer' }}
+            onClick={togglePlay}
           />
 
           {/* Floating Controls */}
           <div className={`qt-controls-container ${showControls ? 'visible' : ''}`}>
-            <div className="qt-controls-panel">
+            <div className="qt-controls-panel" onClick={(e) => e.stopPropagation()}>
               
               <div className="qt-controls-row">
                 <button className="qt-btn">
