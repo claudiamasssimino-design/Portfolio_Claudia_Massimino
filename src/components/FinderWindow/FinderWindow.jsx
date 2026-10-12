@@ -167,6 +167,11 @@ export default function FinderWindow({
         { id: 'mcd_03_winterdays_social_01_post_engagemet_stories_luce', name: 'STORIES_LUCE', type: 'folder' },
       ],
       'mcd_03_winterdays_social_02_post_love': [
+        { id: 'mcd_03_winterdays_social_02_post_love_addobbi_grinchjpg', name: `Addobbi_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Addobbi_Grinch.jpg` },
+        { id: 'mcd_03_winterdays_social_02_post_love_casa_grinchjpg', name: `Casa_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Casa_Grinch.jpg` },
+        { id: 'mcd_03_winterdays_social_02_post_love_maglione_grinchjpg', name: `Maglione_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Maglione_Grinch.jpg` },
+        { id: 'mcd_03_winterdays_social_02_post_love_sacca_grinchjpg', name: `Sacca_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Sacca_Grinch.jpg` },
+        { id: 'mcd_03_winterdays_social_02_post_love_sciarpa_grinchjpg', name: `Sciarpa_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Sciarpa_Grinch.jpg` },
       ],
       'mcd_03_winterdays_social': [
         { id: 'mcd_03_winterdays_social_01_post_engagemet', name: '01_POST ENGAGEMET', type: 'folder' },

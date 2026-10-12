@@ -88,6 +88,13 @@ const COLLECTIONS = {
     { id: 'mcd_03_winterdays_social_01_post_engagemet_stories_luce_2png', name: `2.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_LUCE/2.png` },
     { id: 'mcd_03_winterdays_social_01_post_engagemet_stories_luce_3png', name: `3.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/STORIES_LUCE/3.png` },
   ],
+  'mcd_03_winterdays_social_02_post_love': [
+    { id: 'mcd_03_winterdays_social_02_post_love_addobbi_grinchjpg', name: `Addobbi_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Addobbi_Grinch.jpg` },
+    { id: 'mcd_03_winterdays_social_02_post_love_casa_grinchjpg', name: `Casa_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Casa_Grinch.jpg` },
+    { id: 'mcd_03_winterdays_social_02_post_love_maglione_grinchjpg', name: `Maglione_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Maglione_Grinch.jpg` },
+    { id: 'mcd_03_winterdays_social_02_post_love_sacca_grinchjpg', name: `Sacca_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Sacca_Grinch.jpg` },
+    { id: 'mcd_03_winterdays_social_02_post_love_sciarpa_grinchjpg', name: `Sciarpa_Grinch.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/02_POST LOVE/Sciarpa_Grinch.jpg` },
+  ],
   'mcd_04_ped_01_social_media_day': [
     { id: 'mcd_04_ped_01_social_media_day_1jpg', name: `1.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/01_SOCIAL MEDIA DAY/1.jpg` },
     { id: 'mcd_04_ped_01_social_media_day_2jpg', name: `2.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/04_PED/01_SOCIAL MEDIA DAY/2.jpg` },

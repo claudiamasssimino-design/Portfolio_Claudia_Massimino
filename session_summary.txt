@@ -80,4 +80,5 @@ Session Summary (2026-10-12)
 - Moved the `Note` desktop icon 30px lower (`y: 'calc(58% + 30px)'`) and set `NotesApp` window opening position 30px lower (`initialY={110}`).
 - Shifted default position of the open "Prima di Photoshop usavo i pastelli" window 1.5 squares further right (`initialX={390}`).
 - Shifted the `Mappe` app desktop icon 2 squares left and 0.5 squares up (`x: 'calc(82% - 147px)'`, `y: 'calc(15% - 37px)'`).
+- Populated the `02_POST LOVE` folder under `03_WINTERDAYS_SOCIAL` in `src/components/FinderWindow/FinderWindow.jsx` and `src/components/ImageViewer/ImageViewer.jsx` with the 5 newly added Grinch post love images (`Addobbi_Grinch.jpg`, `Casa_Grinch.jpg`, `Maglione_Grinch.jpg`, `Sacca_Grinch.jpg`, `Sciarpa_Grinch.jpg`), enabling them to open seamlessly in the image viewer upon double-clicking the folder.
 - Verified that the project builds cleanly without errors (`npm run build`).
