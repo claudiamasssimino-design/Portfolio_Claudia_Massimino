@@ -18,7 +18,7 @@ import './DesktopPage.css';
  * Percentages used for responsive placement.
  */
 const DESKTOP_FOLDERS = [
-  { id: 'mcdonalds',label: "McDonald's",        x: '8%',  y: '12%' },
+  { id: 'mcdonalds',label: "McDONALD'S",        x: '8%',  y: '12%' },
   { id: '7days',    label: '7DAYSBRIEF',        x: '6%',  y: '38%' },
   { id: 'iliad',    label: 'ILIAD',             x: '9%',  y: '62%' },
   { id: 'orosaiwa', label: 'OROSAIWA',          x: '85%', y: '42%' },
