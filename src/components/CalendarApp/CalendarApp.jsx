@@ -80,7 +80,7 @@ export default function CalendarApp({ onClose, initialX = 150, initialY = 100 })
           {/* Row 2 */}
           <div className="calendar-cell">5</div>
           <div className="calendar-cell">6</div>
-          <div className="calendar-cell"><span className="calendar-circle">7</span></div>
+          <div className="calendar-cell">7</div>
           <div className="calendar-cell">8</div>
           <div className="calendar-cell">9</div>
           <div className="calendar-cell">10</div>

@@ -108,7 +108,7 @@ export default function MapsApp({ onClose, initialX = 150, initialY = 100 }) {
                <img src={`${import.meta.env.BASE_URL}Afragola.png`} className="maps-sidebar-thumb" alt="Afragola Thumb" />
             </div>
             <div className="maps-sidebar-info">
-               <p>fragola è un comune italiano di 61 432 abitanti della città metropolitana di Napoli in Campania.</p>
+               <p>Afragola è un comune italiano di 61 432 abitanti della città metropolitana di Napoli in Campania.</p>
                <br />
                <p>Posizione: 80021 Afragola NA Italia</p>
                <p>Coordinate: 40,92318° N, 14,31036° E</p>

@@ -87,7 +87,7 @@ export default function FinderWindow({
         { id: 'mcd_02_strips___tutto_per_il_dip_01_tvc_nuove_mccrunchy_chicken_strips___tutto_per_il_dipmp4', name: `Nuove McCrunchy™ Chicken Strips - Tutto per il dip.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/01_TVC/Nuove McCrunchy™ Chicken Strips - Tutto per il dip.mp4` },
       ],
       'mcd_02_strips___tutto_per_il_dip_02_teaser': [
-        { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_png', name: `mistero.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/mistero.png` },
+        { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_png', name: `MISTERO.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/MISTERO.png` },
         { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_che_succedemp4', name: `Che succede.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/Che succede.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_gazzoli_reelmp4', name: `Gazzoli_reel.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/Gazzoli_reel.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_02_teaser_prelanciomp4', name: `PRELANCIO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/PRELANCIO.mp4` },
@@ -127,7 +127,7 @@ export default function FinderWindow({
       'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker': [
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dip_eramp4', name: `DIP ERA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIP ERA.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dippandomp4', name: `DIPPANDO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPANDO.mp4` },
-        { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dippiamomp4', name: `DIPPIAMO?.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPIAMO?.mp4` },
+        { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_dippamp4', name: `DIPPA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/DIPPA.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_gatto_che_dippamp4', name: `GATTO CHE DIPPA.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/GATTO CHE DIPPA.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_guess_whatmp4', name: `GUESS WHAT.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/GUESS WHAT.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_libromp4', name: `LIBRO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/LIBRO.mp4` },

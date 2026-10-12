@@ -70,3 +70,14 @@ Session Summary (2026-10-10)
 - Moved the `05_SOCIAL` folder inside `01_CRISPY REVOLUTION` and renamed it to `03_SOCIAL`, removing its dedicated InfoPanel.
 - Fixed InfoPanel behavior in McDonald's so that entering nested subfolders (like `03_SOCIAL`) keeps the parent folder's InfoPanel (e.g. `01_CRISPY REVOLUTION`) open and active until the user navigates back to the root.
 - Resolved GitHub push failure caused by oversized payload (>113 MB) and committed build artifacts in `dist/`. Created `.gitignore` ignoring `dist/` and `.DS_Store`, untracked `dist/`, configured git HTTP buffer, and pushed commits in batches. The remote repository and GitHub Actions are now completely up to date.
+
+Session Summary (2026-10-12)
+- Corrected typo in `src/components/MapsApp/MapsApp.jsx` sidebar description: changed "fragola è un comune..." to "Afragola è un comune...".
+- Updated asset reference and display name from `mistero.png` to `MISTERO.png` under `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/02_TEASER/` across `src/components/FinderWindow/FinderWindow.jsx` and `src/components/ImageViewer/ImageViewer.jsx`.
+- Removed circle highlight from day 7 in `src/components/CalendarApp/CalendarApp.jsx` (keeping 14 and 31 highlighted).
+- Renamed sticker video from `DIPPIAMO?.mp4` / `DIPPIAMO.mp4` to `DIPPA.mp4` both physically on disk and within `FinderWindow.jsx`, `QuickTimePlayer.jsx`, and `ImageViewer.jsx`.
+- Repositioned desktop icons in `src/components/DesktopPage/DesktopPage.jsx`: moved `OROSAIWA` to where `PED` was previously located (`x: '85%', y: '42%'`), and moved the `Mappe` app icon to where `OROSAIWA` was (`x: '82%', y: '15%'`).
+- Moved the `Note` desktop icon 30px lower (`y: 'calc(58% + 30px)'`) and set `NotesApp` window opening position 30px lower (`initialY={110}`).
+- Shifted default position of the open "Prima di Photoshop usavo i pastelli" window 1.5 squares further right (`initialX={390}`).
+- Shifted the `Mappe` app desktop icon 2 squares left and 0.5 squares up (`x: 'calc(82% - 147px)'`, `y: 'calc(15% - 37px)'`).
+- Verified that the project builds cleanly without errors (`npm run build`).

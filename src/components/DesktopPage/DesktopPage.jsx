@@ -21,7 +21,7 @@ const DESKTOP_FOLDERS = [
   { id: 'mcdonalds',label: "McDonald's",        x: '8%',  y: '12%' },
   { id: '7days',    label: '7DAYSBRIEF',        x: '6%',  y: '38%' },
   { id: 'iliad',    label: 'ILIAD',             x: '9%',  y: '62%' },
-  { id: 'orosaiwa', label: 'OROSAIWA',          x: '82%', y: '15%' },
+  { id: 'orosaiwa', label: 'OROSAIWA',          x: '85%', y: '42%' },
 ];
 
 /**
@@ -126,7 +126,7 @@ export default function DesktopPage() {
         <DesktopIcon
           label="Note"
           x="78%"
-          y="58%"
+          y="calc(58% + 30px)"
           type="note"
           onDoubleClick={() => setShowNotes(true)}
         />
@@ -144,15 +144,15 @@ export default function DesktopPage() {
         {/* Maps icon */}
         <DesktopIcon
           label="Mappe"
-          x="18%"
-          y="62%"
+          x="calc(82% - 147px)"
+          y="calc(15% - 37px)"
           type="app"
           iconSrc={import.meta.env.BASE_URL + 'icons/maps.png'}
           onDoubleClick={() => setShowMaps(true)}
         />
 
         {showNotes && (
-          <NotesApp onClose={() => setShowNotes(false)} />
+          <NotesApp onClose={() => setShowNotes(false)} initialY={110} />
         )}
 
         {showCalendar && (
@@ -249,7 +249,7 @@ export default function DesktopPage() {
             sidebarTitle="Prima di Photoshop"
             initialWidth={810}
             initialHeight={567}
-            initialX={240}
+            initialX={390}
             initialY={70}
             onClose={handleCloseWindow}
             openTrigger={windowTrigger}
