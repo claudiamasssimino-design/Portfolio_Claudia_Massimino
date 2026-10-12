@@ -134,6 +134,11 @@ export default function FinderWindow({
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_top_amomp4', name: `TOP AMO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/TOP AMO.mp4` },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker_mp4', name: `🤌🏻.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/STICKER/🤌🏻.mp4` },
       ],
+      'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh': [
+        { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh_interactive_billboardsjpg', name: `INTERACTIVE_BILLBOARDS.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/06_OOH & DOOH/INTERACTIVE_BILLBOARDS.jpg` },
+        { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh_led_metromp4', name: `LED_METRO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/06_OOH & DOOH/LED_METRO.mp4` },
+        { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh_wall_muralmp4', name: `WALL_MURAL.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/06_OOH & DOOH/WALL_MURAL.mp4` },
+      ],
       'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra': [
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_carousel_ig', name: 'CAROUSEL IG', type: 'folder' },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_sticker', name: 'STICKER', type: 'folder' },
@@ -144,6 +149,7 @@ export default function FinderWindow({
         { id: 'mcd_02_strips___tutto_per_il_dip_03_lancio', name: '03_LANCIO', type: 'folder' },
         { id: 'mcd_02_strips___tutto_per_il_dip_04_filtro_tiktok', name: '04_FILTRO TIKTOK', type: 'folder' },
         { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra', name: '05_CONTENUTI SOCIAL EXTRA', type: 'folder' },
+        { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh', name: '06_OOH & DOOH', type: 'folder' },
       ],
       'mcd_03_winterdays_social_01_post_engagemet_carousel_ig': [
         { id: 'mcd_03_winterdays_social_01_post_engagemet_carousel_ig_1png', name: `1.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/03_WINTERDAYS_SOCIAL/01_POST ENGAGEMET/CAROUSEL IG/1.png` },

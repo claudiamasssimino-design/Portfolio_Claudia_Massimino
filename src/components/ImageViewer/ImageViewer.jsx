@@ -52,6 +52,11 @@ const COLLECTIONS = {
   'mcd_02_strips___tutto_per_il_dip_04_filtro_tiktok': [
     { id: 'mcd_02_strips___tutto_per_il_dip_04_filtro_tiktok_dippa_la_strips_ttmp4', name: `DIPPA LA STRIPS_TT.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/04_FILTRO TIKTOK/DIPPA LA STRIPS_TT.mp4` },
   ],
+  'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh': [
+    { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh_interactive_billboardsjpg', name: `INTERACTIVE_BILLBOARDS.jpg`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/06_OOH & DOOH/INTERACTIVE_BILLBOARDS.jpg` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh_led_metromp4', name: `LED_METRO.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/06_OOH & DOOH/LED_METRO.mp4` },
+    { id: 'mcd_02_strips___tutto_per_il_dip_06_ooh___dooh_wall_muralmp4', name: `WALL_MURAL.mp4`, type: 'video', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/06_OOH & DOOH/WALL_MURAL.mp4` },
+  ],
   'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_carousel_ig': [
     { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_1png', name: `1.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/1.png` },
     { id: 'mcd_02_strips___tutto_per_il_dip_05_contenuti_social_extra_carousel_ig_2png', name: `2.png`, type: 'image-viewer', src: import.meta.env.BASE_URL + `NEW/McDonald's/02_STRIPS - TUTTO PER IL DIP/05_CONTENUTI SOCIAL EXTRA/CAROUSEL IG/2.png` },
